@@ -1,0 +1,29 @@
+<ModMetaData>
+	<name>GeneticRim</name>
+	<author>Sarg</author>
+	<targetVersion>0.17.0</targetVersion>
+	<description>Extract DNA from animals and hybridize them to create new, exotic species!
+
+&lt;size=24&gt;Features&lt;/size&gt;
+- Extract genes from Bears, Chickens, Boomalopes, Muffalos and Wolves, and create hybrids of these species.
+- A bearalope is different from a boombear, so there are 25 new species to experiment with (plus 5 from Thrumbos!). Some very useful, some... less so.
+- Once you research the advanced genetic engineering tech, you can also extract genes from Thrumbos and hybridize them!
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+Some of the biggest animals might flicker. This is to be expected, since a few of them are bigger than Thrumbos!
+
+&lt;size=24&gt;Notes&lt;/size&gt;
+How do I progress? Here is a mini-guide:
+- First, research the tech.
+- Build a Pulper to get organic pulp from wood, and a Genetic Extraction Table to get DNA from animals and to build empty incubators.
+- Kill the animals to extract their genes.
+- Build the Gene Pod to mix the genes of different animals, and fill an empty incubator with the mixture.
+- The incubator will hatch in a day. Keep it warm! You will need to tame the creature afterwards, of course.
+- Results are random! If you mix Bear and Chicken, you might get a Bearchicken or a Chickenbear. Or the experiment can also go wrong...
+- Finally, research the advanced tech, build the Advanced Gene Pod and experiment with Thrumbos to get the strongest creatures in the game.
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+I have many combinations in mind, so if people seem to enjoy this I'd be happy to add them :)
+
+		</description>
+</ModMetaData>

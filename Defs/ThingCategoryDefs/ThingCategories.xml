@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+ 
+    <ThingCategoryDef>
+      <defName>GeneticMaterial</defName>
+      <label>genetic materials</label>
+      <parent>Manufactured</parent>
+      
+    </ThingCategoryDef>
+	<ThingCategoryDef>
+      <defName>Incubators</defName>
+      <label>incubators</label>
+      <parent>GeneticMaterial</parent>
+      
+    </ThingCategoryDef>
+
+
+</ThingCategoryDefs>

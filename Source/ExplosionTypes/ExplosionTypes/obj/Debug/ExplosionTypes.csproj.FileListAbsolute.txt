@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRim\Assemblies\ExplosionTypes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRim\Source\ExplosionTypes\ExplosionTypes\obj\Debug\ExplosionTypes.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneRim\Source\ExplosionTypes\ExplosionTypes\obj\Debug\ExplosionTypes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneticRim\Assemblies\ExplosionTypes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneticRim\Source\ExplosionTypes\ExplosionTypes\obj\Debug\ExplosionTypes.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneticRim\Source\ExplosionTypes\ExplosionTypes\obj\Debug\ExplosionTypes.dll

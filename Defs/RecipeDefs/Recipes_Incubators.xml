@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+<!-- Tier 1 Incubators -->
+
+	<RecipeDef>
+		<defName>CreateBearBoomalopeIncubator</defName>
+		<label>bear / boomalope incubator</label>
+		<description>Fill an incubator with genes from a bear and a boomalope</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>	  
+
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BearGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoomalopeGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BearGenetic</li>
+				<li>BoomalopeGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BearBoomalopePre>1</BearBoomalopePre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateBearChickenIncubator</defName>
+		<label>bear / chicken incubator</label>
+		<description>Fill an incubator with genes from a bear and a chicken</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BearGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChickenGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BearGenetic</li>
+				<li>ChickenGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BearChickenPre>1</BearChickenPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateBearMuffaloIncubator</defName>
+		<label>bear / muffalo incubator</label>
+		<description>Fill an incubator with genes from a bear and a muffalo</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BearGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuffaloGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BearGenetic</li>
+				<li>MuffaloGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BearMuffaloPre>1</BearMuffaloPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateBearWolfIncubator</defName>
+		<label>bear / wolf incubator</label>
+		<description>Fill an incubator with genes from a bear and a wolf</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BearGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WolfGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BearGenetic</li>
+				<li>WolfGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BearWolfPre>1</BearWolfPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateBoomalopeChickenIncubator</defName>
+		<label>boomalope / chicken incubator</label>
+		<description>Fill an incubator with genes from a boomalope and a chicken</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChickenGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoomalopeGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BoomalopeGenetic</li>
+				<li>ChickenGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BoomalopeChickenPre>1</BoomalopeChickenPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateBoomalopeMuffaloIncubator</defName>
+		<label>boomalope / muffalo incubator</label>
+		<description>Fill an incubator with genes from a boomalope and a muffalo</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuffaloGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoomalopeGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BoomalopeGenetic</li>
+				<li>MuffaloGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BoomalopeMuffaloPre>1</BoomalopeMuffaloPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateBoomalopeWolfIncubator</defName>
+		<label>boomalope / wolf incubator</label>
+		<description>Fill an incubator with genes from a boomalope and a wolf</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WolfGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoomalopeGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>BoomalopeGenetic</li>
+				<li>WolfGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BoomalopeWolfPre>1</BoomalopeWolfPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateChickenMuffaloIncubator</defName>
+		<label>chicken / muffalo incubator</label>
+		<description>Fill an incubator with genes from a chicken and a muffalo</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChickenGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuffaloGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ChickenGenetic</li>
+				<li>MuffaloGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ChickenMuffaloPre>1</ChickenMuffaloPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateChickenWolfIncubator</defName>
+		<label>chicken / wolf incubator</label>
+		<description>Fill an incubator with genes from a chicken and a wolf</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>	
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChickenGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WolfGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ChickenGenetic</li>
+				<li>WolfGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ChickenWolfPre>1</ChickenWolfPre>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>CreateMuffaloWolfIncubator</defName>
+		<label>muffalo / wolf incubator</label>
+		<description>Fill an incubator with genes from a muffalo and a wolf</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>GenePod</li>
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuffaloGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WolfGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>MuffaloGenetic</li>
+				<li>WolfGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MuffaloWolfPre>1</MuffaloWolfPre>
+		</products>
+	</RecipeDef>
+
+<!-- Thrumbo Tier Incubators -->
+	
+	<RecipeDef>
+		<defName>CreateThrumboWolfIncubator</defName>
+		<label>thrumbo / wolf incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a wolf</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WolfGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ThrumboGenetic</li>
+				<li>WolfGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ThrumwolfIncubator>1</ThrumwolfIncubator>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>CreateThrumboBearIncubator</defName>
+		<label>thrumbo / bear incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a bear</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BearGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ThrumboGenetic</li>
+				<li>BearGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ThrumbearIncubator>1</ThrumbearIncubator>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>CreateThrumbochickenIncubator</defName>
+		<label>thrumbo / chicken incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a chicken</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChickenGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ThrumboGenetic</li>
+				<li>ChickenGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ThrumbochickenIncubator>1</ThrumbochickenIncubator>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>CreateThrumbalopeIncubator</defName>
+		<label>thrumbo / boomalope incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a boomalope</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BoomalopeGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ThrumboGenetic</li>
+				<li>BoomalopeGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ThrumbalopeIncubator>1</ThrumbalopeIncubator>
+		</products>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>CreateThrumffaloIncubator</defName>
+		<label>thrumbo / muffalo incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a muffalo</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			
+			<li>AdvancedGenePod</li>				
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MuffaloGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>ThrumboGenetic</li>
+				<li>MuffaloGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ThrumffaloIncubator>1</ThrumffaloIncubator>
+		</products>
+	</RecipeDef>
+					
+</RecipeDefs>

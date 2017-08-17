@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Bear / Chicken Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>BearChickenEggUnfertilized</defName>
+    <label>bearchicken egg (unfert.)</label>
+    <description>Unfertilized bearchicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(128,125,35)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>BearChickenEggFertilized</defName>
+    <label>bearchicken egg (fert.)</label>
+    <description>Fertilized bearchicken egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(128,125,75)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>7</hatcherDaysToHatch>
+        <hatcherPawn>BearchickenKind</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+   <!-- Chicken / Bear Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChickenbearEggUnfertilized</defName>
+    <label>chickenbear egg (unfert.)</label>
+    <description>Unfertilized Chickenbear egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(0,125,35)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ChickenbearEggFertilized</defName>
+    <label>chickenbear egg (fert.)</label>
+    <description>Fertilized Chickenbear egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(0,125,75)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>8</hatcherDaysToHatch>
+        <hatcherPawn>Chickenbear</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+     <!-- Chicken / Boomalope Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChickenlopeEggUnfertilized</defName>
+    <label>chickenlope egg (unfert.)</label>
+    <description>Unfertilized Chickenlope egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(0,50,235)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ChickenlopeEggFertilized</defName>
+    <label>chickenlope egg (fert.)</label>
+    <description>Fertilized Chickenlope egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(0,50,235)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>9</hatcherDaysToHatch>
+        <hatcherPawn>Chickenlope</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Chicken / Muffalo Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChickenffaloEggUnfertilized</defName>
+    <label>chickenffalo egg (unfert.)</label>
+    <description>Unfertilized Chickenffalo egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(0,10,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ChickenffaloEggFertilized</defName>
+    <label>chickenffalo egg (fert.)</label>
+    <description>Fertilized Chickenffalo egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(0,10,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>20</hatcherDaysToHatch>
+        <hatcherPawn>Chickenffalo</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+   <!-- Chicken / Wolf Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChickenwolfEggUnfertilized</defName>
+    <label>chickenwolf egg (unfert.)</label>
+    <description>Unfertilized Chickenwolf egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(0,70,70)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ChickenwolfEggFertilized</defName>
+    <label>chickenwolf egg (fert.)</label>
+    <description>Fertilized Chickenwolf egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(0,70,70)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>15</hatcherDaysToHatch>
+        <hatcherPawn>Chickenwolf</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+    <!-- Muffalo / Chicken Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>MuffalochickenEggUnfertilized</defName>
+    <label>muffalochicken egg (unfert.)</label>
+    <description>Unfertilized Muffalochicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(255,70,70)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>MuffalochickenEggFertilized</defName>
+    <label>muffalochicken egg (fert.)</label>
+    <description>Fertilized Muffalochicken egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(255,70,70)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>17</hatcherDaysToHatch>
+        <hatcherPawn>Muffalochicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+      <!-- Boomalope / Chicken Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>BoomachickenEggUnfertilized</defName>
+    <label>boomachicken egg (unfert.)</label>
+    <description>Unfertilized Boomachicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(255,175,70)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>BoomachickenEggFertilized</defName>
+    <label>boomachicken egg (fert.)</label>
+    <description>Fertilized Boomachicken egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(255,175,70)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>15</hatcherDaysToHatch>
+        <hatcherPawn>Boomachicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+    <!-- Wolf / Chicken Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>WolfchickenEggUnfertilized</defName>
+    <label>wolfchicken egg (unfert.)</label>
+    <description>Unfertilized Wolfchicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(0,0,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>WolfchickenEggFertilized</defName>
+    <label>wolfchicken egg (fert.)</label>
+    <description>Fertilized Wolfchicken egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(0,0,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>15</hatcherDaysToHatch>
+        <hatcherPawn>Wolfchicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+     <!-- Thrumbochicken Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ThrumbochickenEggUnfertilized</defName>
+    <label>thrumbochicken egg (unfert.)</label>
+    <description>Unfertilized Thrumbochicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/EggHuge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>1</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ThrumbochickenEggFertilized</defName>
+    <label>thrumbochicken egg (fert.)</label>
+    <description>Fertilized Thrumbochicken egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/EggHuge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>25.0</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>1</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>75</hatcherDaysToHatch>
+        <hatcherPawn>Thrumbochicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

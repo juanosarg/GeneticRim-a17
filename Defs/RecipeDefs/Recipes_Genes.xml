@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	
+	
+	<RecipeDef>
+		<defName>BaseIncubator</defName>
+		<label>manufacture empty incubator</label>
+		<description>Manufacture an empty incubator using Steel and an organic growth compound.</description>
+		<jobString>Manufacturing empty incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>800</workAmount>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Steel</li>
+					
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>OrganicPulp</li>
+						
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Steel</li>
+				<li>OrganicPulp</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<EmptyIncubator>1</EmptyIncubator>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ExtractGenesBear</defName>
+		<label>extract genes from a bear</label>
+		<description>Extract genetic material from a bear corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>GrizzlyBear_Corpse</li>
+						<li>PolarBear_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>GrizzlyBear_Corpse</li>
+				<li>PolarBear_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BearGenetic>1</BearGenetic>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ExtractGenesChicken</defName>
+		<label>extract genes from a chicken</label>
+		<description>Extract genetic material from a chicken corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Chicken_Corpse</li>
+						<li>Turkey_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Chicken_Corpse</li>
+				<li>Turkey_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ChickenGenetic>1</ChickenGenetic>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ExtractGenesBoomalope</defName>
+		<label>extract genes from a boomalope</label>
+		<description>Extract genetic material from a boomalope corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Boomalope_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Boomalope_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BoomalopeGenetic>1</BoomalopeGenetic>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ExtractGenesMuffalo</defName>
+		<label>extract genes from a muffalo</label>
+		<description>Extract genetic material from a muffalo corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Muffalo_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Muffalo_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MuffaloGenetic>1</MuffaloGenetic>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ExtractGenesWolf</defName>
+		<label>extract genes from a wolf</label>
+		<description>Extract genetic material from a wolf corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>WolfTimber_Corpse</li>
+						<li>WolfArctic_Corpse</li>
+						<li>Warg_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>WolfTimber_Corpse</li>
+				<li>WolfArctic_Corpse</li>
+				<li>Warg_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<WolfGenetic>1</WolfGenetic>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>ExtractGenesThrumbo</defName>
+		<label>extract genes from a thrumbo</label>
+		<description>Extract genetic material from a thrumbo corpse.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Thrumbo_Corpse</li>
+						
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Thrumbo_Corpse</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ThrumboGenetic>1</ThrumboGenetic>
+		</products>
+		<researchPrerequisite>AdvancedGeneticEngineering</researchPrerequisite>
+	</RecipeDef>
+  
+ 
+
+
+  
+</RecipeDefs>

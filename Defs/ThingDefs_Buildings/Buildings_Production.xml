@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  
+ 
+<ThingDef ParentName="BenchBase">
+    <DefName>GeneticExtractionTable</DefName>
+    <label>genetic extraction table</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A genetic engineering workbench.</Description>
+    <graphicData>
+      <texPath>Things/Building/GeneticExtractionTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <rect>(0.3,0,2.7,1)</rect>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+ 
+    <costList>
+      <Steel>200</Steel>
+      <Component>3</Component>
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-8</Beauty>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>GeneticEngineering</li></researchPrerequisites>
+	<designationCategory>GeneticsTab</designationCategory>
+  </ThingDef>
+  
+<ThingDef ParentName="BuildingBase">
+    <DefName>GenePod</DefName>
+    <label>genepod</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>Genetic material samples are combined and grown in this laboratory.</Description>
+    <graphicData>
+      <texPath>Things/Building/GenePod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,4)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>200</Steel>
+      <Component>4</Component>
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(2,4)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>GeneticEngineering</li></researchPrerequisites>
+		<designationCategory>GeneticsTab</designationCategory>
+
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+    <DefName>AdvancedGenePod</DefName>
+    <label>advanced genepod</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>Genetic material samples are combined and grown in this laboratory. The vats of growth compound accelerate some of the most difficult experiments.</Description>
+    <graphicData>
+      <texPath>Things/Building/GenePodAdvanced</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>300</Steel>
+      <Component>4</Component>
+	  <OrganicPulp>15</OrganicPulp>
+	  
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(4,4)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>AdvancedGeneticEngineering</li></researchPrerequisites>
+		<designationCategory>GeneticsTab</designationCategory>
+
+</ThingDef>
+
+<ThingDef ParentName="BuildingBase">
+    <DefName>Pulper</DefName>
+    <label>pulper</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>Turns wood and organic resources into a pulp, useful as a base organic compound.</Description>
+    <graphicData>
+      <texPath>Things/Building/Pulper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,4)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>50</Steel>
+      <Component>1</Component>
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(2,3)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <researchPrerequisites><li>GeneticEngineering</li></researchPrerequisites>
+		<designationCategory>GeneticsTab</designationCategory>
+
+  </ThingDef>
+  
+</ThingDefs>

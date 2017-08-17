@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Genetic Material ====================-->
+
+  <ThingDef Name="GeneticsBase" ParentName="ResourceBase" Abstract="True">
+    
+    
+    <graphicData>
+      <texPath>Things/Item/geneticmaterials</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>15</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Mass>0.10</Mass>
+      <Flammability>1.0</Flammability>
+      
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>GeneticMaterial</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+    </comps>
+  </ThingDef>
+
+   <ThingDef ParentName="GeneticsBase">
+    <defName>BearGenetic</defName>
+    <label>bear genetic material</label>
+    <description>A vial of genetic material extracted from a bear's corpse.</description>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
+    <defName>ChickenGenetic</defName>
+    <label>chicken genetic material</label>
+    <description>A vial of genetic material extracted from a chicken's corpse.</description>
+    
+    <graphicData>
+      <color>(100,219,108)</color>
+    </graphicData>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
+    <defName>BoomalopeGenetic</defName>
+    <label>boomalope genetic material</label>
+    <description>A vial of genetic material extracted from a boomalope's corpse.</description>
+    
+    <graphicData>
+      <color>(220,100,108)</color>
+    </graphicData>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
+    <defName>MuffaloGenetic</defName>
+    <label>muffalo genetic material</label>
+    <description>A vial of genetic material extracted from a muffalo's corpse.</description>
+    
+    <graphicData>
+      <color>(250,219,108)</color>
+    </graphicData>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
+    <defName>WolfGenetic</defName>
+    <label>wolf genetic material</label>
+    <description>A vial of genetic material extracted from a wolf's corpse.</description>
+    
+    <graphicData>
+      <color>(100,219,250)</color>
+    </graphicData>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
+    <defName>ThrumboGenetic</defName>
+    <label>thrumbo genetic material</label>
+    <description>A vial of genetic material extracted from a thrumbo's corpse.</description>
+    
+    <graphicData>
+      <color>(228,204,0)</color>
+    </graphicData>
+    
+  </ThingDef>
+  
+  
+   <!--=============== Organic Pulp ====================-->
+   
+<ThingDef ParentName="ResourceBase">
+    <defName>OrganicPulp</defName>
+    <label>organic pulp</label>
+    <description>This wood pulp can be used as an organic growth compound to accelerate some of the genetic processes. Needed to upgrade the Gene Pod.</description>
+    <graphicData>
+      <texPath>Things/Item/OrganicPulp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.6</Mass>
+      <Flammability>1.0</Flammability>
+	  <DeteriorationRate>10.0</DeteriorationRate>
+	</statBases>
+    
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+</ThingDef>
+
+  
+</Defs>

@@ -1,0 +1,30 @@
+Bear
+Boomalope
+Chicken
+Muffalo
+Wolf
+
+Bearalope >
+Bearachicken >
+Bearffalo >
+Bearwolf >
+
+Boomabear >
+Booamachicken >
+Boomffalo >
+Boomwolf >
+
+Chickenbear >
+Chickenlope >
+Chickenffalo >
+Chickenwolf >
+
+Muffalobear >
+Muffalope >
+Muffachicken >
+Muffawolf >
+
+Wolfbear >
+Wolfalope >
+Wolfachicken >
+Wolffalo >
