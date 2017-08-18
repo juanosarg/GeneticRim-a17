@@ -2,7 +2,7 @@
 <Defs>
     
   <!-- Bear - Boomalope -->
-  <ThingDef ParentName="BaseBear">
+  <ThingDef ParentName="BaseBear" ADogSaidBody="Legs">
     <defName>Bearalope</defName>
     <label>bearalope</label>
     <description>A bear / boomalope hybrid. Not as strong in melee as a pure bear, but its unstable chemical reservoirs explode with great force when it dies. Unfortunately, the extreme virulence of these chemicals is harmful to the creature, and they have very short, miserable lifespans.</description>
@@ -137,7 +137,7 @@
     </lifeStages>
   </PawnKindDef>
   <!-- Bear - Chicken --> 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Bearchicken</defName>
     <label>Bearchicken</label>
     <description>A bear / chicken hybrid. Nicknamed "owlbear" by the colonists. Much weaker in melee than a bear, but it lays eggs, and can obviously defend itself in combat much better than a chicken</description>
@@ -311,7 +311,7 @@
     </lifeStages>
   </PawnKindDef>
   <!-- Bear - Muffalo -->
-  <ThingDef ParentName="BaseBear">
+  <ThingDef ParentName="BaseBear" ADogSaidBody="Legs">
     <defName>Bearffalo</defName>
     <label>bearffalo</label>
     <description>A bear / muffalo hybrid. Produces milk and wool, and is a pack animal, like a muffalo, while being slightly better in combat. It is a bit too temperamental for a pack beast.</description>
@@ -457,7 +457,7 @@
     </lifeStages>
   </PawnKindDef>
   <!-- Bear - Wolf -->
-  <ThingDef ParentName="BaseBear">
+  <ThingDef ParentName="BaseBear" ADogSaidBody="LegsTail">
     <defName>Bearwolf</defName>
     <label>bearwolf</label>
     <description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.</description>

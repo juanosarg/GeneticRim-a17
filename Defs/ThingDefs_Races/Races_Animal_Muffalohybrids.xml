@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Muffalo - Bear -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalobear</defName>
     <label>muffalobear</label>
     <description>A Muffalo / bear hybrid. The Muffalobear is a stronger variant of muffalo that doesn't produce wool</description>
@@ -121,7 +121,7 @@
   </PawnKindDef>
 
   <!-- Muffalo - Boomalope -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase"  ADogSaidBody="LegsTail">
     <defName>Muffalope</defName>
     <label>muffalope</label>
     <description>A Muffalo / boomalope hybrid. Because it's so cool when your caravans can EXPLODE</description>
@@ -247,7 +247,7 @@
   </PawnKindDef>
 
   <!-- Muffalo - Chicken -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalochicken</defName>
     <label>muffalochicken</label>
     <description>A Muffalo / chicken hybrid. A very strange bovine beast that lays eggs.</description>
@@ -385,7 +385,7 @@
   </PawnKindDef>
 
   <!-- Muffalo - Wolf -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalowolf</defName>
     <label>muffalowolf</label>
     <description>A Muffalo / wolf hybrid. Faster than a standard muffalo, and better able to defend itself, but has lost the capacity to produce milk</description>

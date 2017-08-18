@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Boomalope - Bear -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Boomabear</defName>
     <label>boomabear</label>
     <description>A boomalope / bear hybrid. Stronger than a standard Boomalope, and explodes with a small, concentrated burst when downed. Very dangerous in tight, confined spaces.</description>
@@ -136,7 +136,7 @@
   </PawnKindDef>
 
   <!-- Boomalope - Chicken -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Boomachicken</defName>
     <label>boomachicken</label>
     <description>A Boomalope / chicken hybrid. These creatures produce two types of eggs: the regular kind, and a special type of egg filled to the brim with dangerous chemicals. These aberrant eggs aren't normally laid, and they are liberated when the creature dies. In contact with the atmosphere, they explode violently in a few seconds.</description>
@@ -268,7 +268,7 @@
   </PawnKindDef>
 
   <!-- Boomalope - Muffalo -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Boomffalo</defName>
     <label>boomffalo</label>
     <description>A Boomalope / Muffalo hybrid. A bit unstable to transport goods, but it produces milk and wool. From a genetic engineering standpoint, these creatures are hard to stabilize, since the muffalo's biology is incompatible with the boomalope's chemical sacs. A cocktail of chemical refrigerants is used to maintain a delicate balance.</description>
@@ -396,7 +396,7 @@
   </PawnKindDef>
 
   <!-- Boomalope - Wolf -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Boomwolf</defName>
     <label>boomwolf</label>
     <description>A Boomalope / Wolf hybrid. Faster than a standard boomalope, and capable of delivering a powerful bite</description>

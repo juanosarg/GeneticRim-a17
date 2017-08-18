@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Chicken - Bear -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenbear</defName>
     <label>chickenbear</label>
     <description>A chicken / bear hybrid. Lays eggs, and can defend itself in combat slightly better than a chicken</description>
@@ -145,7 +145,7 @@
   </PawnKindDef>
   
   <!-- Chicken - Boomalope -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenlope</defName>
     <label>chickenlope</label>
     <description>A chicken / boomalope hybrid. Lays eggs, and explodes on death!</description>
@@ -290,7 +290,7 @@
   </PawnKindDef>
   
   <!-- Chicken - Muffalo -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenffalo</defName>
     <label>chickenffalo</label>
     <description>A chicken / muffalo hybrid. Lays eggs, produces milk, wool and can be used as a pack beast. Of course, it doesn't excel at ANY of those things, but it's the price you pay for convenience. They are so cute, though, wearing their tiny bags...</description>
@@ -441,7 +441,7 @@
   </PawnKindDef>
   
   <!-- Chicken - Wolf -->
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenwolf</defName>
     <label>chickenwolf</label>
     <description>A chicken / wolf hybrid. Fast moving, and with a nasty bite!</description>

@@ -2,7 +2,7 @@
 <Defs>
     
   <!-- Bear - Thrumbo -->
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbear</defName>
     <label>thrumbear</label>
     <description>This gargantuan beast is the result of splicing bear genes in a standard thrumbo. As strong and resilient as it is easy to anger, a thrumbear attack is something to be VERY scared of.</description>
@@ -136,7 +136,7 @@
   </PawnKindDef>
   
   <!-- Boomalope - Thrumbo -->  
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbalope</defName>
     <label>thrumbalope</label>
     <description>The thrumbalope is a thrumbo that has been spliced with boomalope genes. Their huge sacs of unstable chemicals explode with unbelievable force, which has caused the colonists to nickname them "nukalopes".</description>
@@ -272,7 +272,7 @@
   </PawnKindDef>
 
   <!-- Chicken - Thrumbo -->  
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbochicken</defName>
     <label>thrumbochicken</label>
     <description>The thrumbochicken is a thrumbo that has been spliced with avian genes. Although not very ravenous, these are lightning fast predators that could hunt any other creature with ease. These animals lay enormous eggs!</description>
@@ -417,7 +417,7 @@
   </PawnKindDef>
 
   <!-- Muffalo - Thrumbo -->  
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumffalo</defName>
     <label>thrumffalo</label>
     <description>This massive ungulate is the result of splicing a thrumbo with muffalo genes. Capable of carrying a huge amount of materials, there is no better possible pack animal in all the Rim.</description>
@@ -565,7 +565,7 @@
   </PawnKindDef>
   
   <!-- Wolf - Thrumbo -->  
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumwolf</defName>
     <label>thrumwolf</label>
     <description>This colossal predator is the result of splicing a thrumbo with wolf genes. Fast and really hungry, all the time. Entire ecosystems can be decimated by the insane apetite of a Thrumbowolf.</description>
