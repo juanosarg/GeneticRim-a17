@@ -81,8 +81,8 @@
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-	  <leatherColor>(115,110,100)</leatherColor>
-      <meatLabel>wolfmeat</meatLabel>
+	  <useLeatherFrom>WolfTimber</useLeatherFrom>
+      <useMeatFrom>WolfTimber</useMeatFrom>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -251,8 +251,8 @@
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-	  <leatherColor>(115,110,100)</leatherColor>
-      <meatLabel>wolfmeat</meatLabel>
+	  <useLeatherFrom>WolfTimber</useLeatherFrom>
+      <useMeatFrom>WolfTimber</useMeatFrom>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -429,8 +429,8 @@
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-	  <leatherColor>(115,110,100)</leatherColor>
-      <meatLabel>wolfmeat</meatLabel>
+	  <useLeatherFrom>WolfTimber</useLeatherFrom>
+      <useMeatFrom>WolfTimber</useMeatFrom>
       <litterSizeCurve>
         <points>
           <li>(0.5, 0)</li>
@@ -597,8 +597,8 @@
       <nuzzleMtbHours>120</nuzzleMtbHours>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-	  <leatherColor>(115,110,100)</leatherColor>
-      <meatLabel>wolfmeat</meatLabel>
+	  <useLeatherFrom>WolfTimber</useLeatherFrom>
+      <useMeatFrom>WolfTimber</useMeatFrom>
 	  <packAnimal>true</packAnimal>
       <litterSizeCurve>
         <points>

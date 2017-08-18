@@ -33,6 +33,8 @@
       <baseBodySize>2.5</baseBodySize>
       <baseHealthScale>1.95</baseHealthScale>
 	  <baseHungerRate>0.98</baseHungerRate>
+	  <useLeatherFrom>Muffalo</useLeatherFrom>
+      <useMeatFrom>Muffalo</useMeatFrom>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherColor>(152,170,174)</leatherColor>
       <leatherInsulation>1.0</leatherInsulation>
@@ -159,9 +161,9 @@
       <baseBodySize>2.0</baseBodySize>
       <baseHealthScale>1.55</baseHealthScale>
 	  <baseHungerRate>0.85</baseHungerRate>
+	  <useLeatherFrom>Muffalo</useLeatherFrom>
+      <useMeatFrom>Muffalo</useMeatFrom>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherColor>(152,170,174)</leatherColor>
-      <leatherInsulation>1.0</leatherInsulation>
       <gestationPeriodDays>25</gestationPeriodDays>
       <wildness>0.5</wildness>
       <nuzzleMtbHours>120</nuzzleMtbHours>
@@ -298,8 +300,8 @@
       <baseHealthScale>1.45</baseHealthScale>
 	  <baseHungerRate>0.85</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherColor>(152,170,174)</leatherColor>
-      <leatherInsulation>1.0</leatherInsulation>
+	  <useLeatherFrom>Muffalo</useLeatherFrom>
+      <useMeatFrom>Muffalo</useMeatFrom>
       <gestationPeriodDays>17</gestationPeriodDays>
       <wildness>0.5</wildness>
       <nuzzleMtbHours>120</nuzzleMtbHours>
@@ -419,8 +421,8 @@
       <baseHealthScale>1.95</baseHealthScale>
 	  <baseHungerRate>0.85</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherColor>(152,170,174)</leatherColor>
-      <leatherInsulation>1.0</leatherInsulation>
+      <useLeatherFrom>Muffalo</useLeatherFrom>
+      <useMeatFrom>Muffalo</useMeatFrom>
       <gestationPeriodDays>25</gestationPeriodDays>
       <wildness>0.5</wildness>
       <nuzzleMtbHours>120</nuzzleMtbHours>

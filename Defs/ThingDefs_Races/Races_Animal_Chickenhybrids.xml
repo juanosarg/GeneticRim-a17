@@ -45,6 +45,8 @@
       <foodType>VegetarianRoughAnimal</foodType>
       <trainableIntelligence>None</trainableIntelligence>
       <wildness>0</wildness>
+	  <useLeatherFrom>Chicken</useLeatherFrom>
+      <useMeatFrom>Chicken</useMeatFrom>
       <gestationPeriodDays>8</gestationPeriodDays>
       <mateMtbHours>9</mateMtbHours>
       <litterSizeCurve>
@@ -189,6 +191,8 @@
       <baseBodySize>0.18</baseBodySize>
       <baseHealthScale>0.25</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
+	  <useLeatherFrom>Chicken</useLeatherFrom>
+      <useMeatFrom>Chicken</useMeatFrom>
       <trainableIntelligence>None</trainableIntelligence>
       <wildness>0</wildness>
       <gestationPeriodDays>9</gestationPeriodDays>
@@ -339,6 +343,8 @@
       <baseHungerRate>0.55</baseHungerRate>
       <baseBodySize>0.2</baseBodySize>
       <baseHealthScale>0.45</baseHealthScale>
+	  <useLeatherFrom>Chicken</useLeatherFrom>
+      <useMeatFrom>Chicken</useMeatFrom>
       <foodType>VegetarianRoughAnimal</foodType>
       <trainableIntelligence>None</trainableIntelligence>
       <wildness>0</wildness>
@@ -483,6 +489,8 @@
       <baseBodySize>0.2</baseBodySize>
       <baseHealthScale>0.45</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
+	  <useLeatherFrom>Chicken</useLeatherFrom>
+      <useMeatFrom>Chicken</useMeatFrom>
       <trainableIntelligence>None</trainableIntelligence>
       <wildness>0</wildness>
       <gestationPeriodDays>15</gestationPeriodDays>

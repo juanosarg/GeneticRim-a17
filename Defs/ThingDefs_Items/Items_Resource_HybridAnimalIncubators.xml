@@ -16,7 +16,7 @@
     <stackLimit>1</stackLimit>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
-      <MarketValue>7</MarketValue>
+      <MarketValue>45</MarketValue>
       <Mass>2</Mass>
       <Flammability>1.0</Flammability>
 	  
@@ -38,7 +38,7 @@
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
 	  <Mass>2</Mass>
-	  <MarketValue>7.0</MarketValue>
+	  <MarketValue>45</MarketValue>
     </statBases>
     <tickerType>Normal</tickerType>
 	<thingCategories>

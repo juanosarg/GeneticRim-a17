@@ -13,7 +13,7 @@
     <soundDrop>Standard_Drop</soundDrop>
     <statBases>
       <MaxHitPoints>5000</MaxHitPoints>
-      <MarketValue>10</MarketValue>
+      <MarketValue>45</MarketValue>
       <Mass>0.35</Mass>
       <Flammability>0.0</Flammability>
       <DeteriorationRate>6</DeteriorationRate>
