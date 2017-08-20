@@ -61,11 +61,17 @@
     </graphicData>
 </ThingDef>
 
+<ThingDef Abstract="True" Name="IncubatorsBaseTierInsectoids" ParentName="IncubatorsBase">
+    <graphicData>
+	  <texPath>Things/Item/IncubatorCanisterTierInsectoids</texPath>
+    </graphicData>
+</ThingDef>
+
 <!-- Items handling Bear / Boomalope hybrids -->
 <ThingDef ParentName="IncubatorsBase">
     <defName>BearBoomalopePre</defName>
     <label>boomalope / bear incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -103,7 +109,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>BearChickenPre</defName>
     <label>chicken / bear incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -141,7 +147,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>BearMuffaloPre</defName>
     <label>muffalo / bear incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -179,7 +185,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>BearWolfPre</defName>
     <label>wolf / bear incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -217,7 +223,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>BoomalopeChickenPre</defName>
     <label>boomalope / chicken incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -255,7 +261,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>BoomalopeMuffaloPre</defName>
     <label>boomalope / muffalo incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -293,7 +299,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>BoomalopeWolfPre</defName>
     <label>boomalope / wolf incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -331,7 +337,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>ChickenMuffaloPre</defName>
     <label>chicken / muffalo incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -369,7 +375,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>ChickenWolfPre</defName>
     <label>chicken / wolf incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -407,7 +413,7 @@
 <ThingDef ParentName="IncubatorsBase">
     <defName>MuffaloWolfPre</defName>
     <label>muffalo / wolf incubator</label>
-    <description>This description shouldn't have time to appear ingame</description>
+    <description>An incubator filled with a mixture of animal genetic material</description>
     <comps>
       <li Class="NewHatcher.CompProperties_HatcherRandomizer">
         
@@ -500,6 +506,81 @@
       <li Class="NewHatcher.CompProperties_Incubator">
         <hatcherDaysToHatch>1</hatcherDaysToHatch>
         <hatcherPawn>Thrumwolf</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+
+<!-- Items handling Insectoid hybrids -->
+
+ 
+<ThingDef ParentName="IncubatorsBaseTierInsectoids">
+    <defName>BearscarabIncubator</defName>
+    <label>insectoid / bear incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+	<comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaysToHatch>1</hatcherDaysToHatch>
+        <hatcherPawn>Bearscarab</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+  
+<ThingDef ParentName="IncubatorsBaseTierInsectoids">
+    <defName>MuffalopedeIncubator</defName>
+    <label>insectoid / muffalo incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+    <comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaysToHatch>1</hatcherDaysToHatch>
+        <hatcherPawn>Muffalopede</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="IncubatorsBaseTierInsectoids">
+    <defName>BoombeetleIncubator</defName>
+    <label>insectoid / boomalope incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+	<comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaysToHatch>1</hatcherDaysToHatch>
+        <hatcherPawn>Boombeetle</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+  
+<ThingDef ParentName="IncubatorsBaseTierInsectoids">
+    <defName>ChickenspiderIncubator</defName>
+    <label>insectoid / chicken incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+    <comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaysToHatch>1</hatcherDaysToHatch>
+        <hatcherPawn>Chickenspider</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="IncubatorsBaseTierInsectoids">
+    <defName>WolfscarabIncubator</defName>
+    <label>insectoid / wolf incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+    <comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaysToHatch>1</hatcherDaysToHatch>
+        <hatcherPawn>Wolfscarab</hatcherPawn>
+      </li>
+    </comps>
+</ThingDef>
+
+<ThingDef ParentName="IncubatorsBaseTierInsectoids">
+    <defName>ThrumbospiderIncubator</defName>
+    <label>insectoid / thrumbo incubator</label>
+    <description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+    <comps>
+      <li Class="NewHatcher.CompProperties_Incubator">
+        <hatcherDaysToHatch>1</hatcherDaysToHatch>
+        <hatcherPawn>Thrumbospider</hatcherPawn>
       </li>
     </comps>
 </ThingDef>

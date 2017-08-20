@@ -17,6 +17,21 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>InsectoidGenome</defName>
+    <label>insectoid genome</label>
+    <tab>GeneticReseach</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Research ways to extract genetic material from alien insectoid species.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>GeneticEngineering</li>
+    </prerequisites>
+    
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
     <defName>AdvancedGeneticEngineering</defName>
     <label>advanced genetic engineering</label>
     <tab>GeneticReseach</tab>

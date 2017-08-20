@@ -254,7 +254,7 @@
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>7.0</MarketValue>
+      <MarketValue>25.0</MarketValue>
     </statBases>
 	<ingestible>
        <nutrition>1</nutrition>
@@ -282,5 +282,40 @@
       </li>
     </comps>
   </ThingDef>
-  
+       <!-- Chickenspider Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChickenspiderEggUnfertilized</defName>
+    <label>chickenspider egg (unfert.)</label>
+    <description>Unfertilized Chickenspider egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.2</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ChickenspiderEggFertilized</defName>
+    <label>chickenspider egg (fert.)</label>
+    <description>Fertilized Chickenspider egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.2</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>10</hatcherDaysToHatch>
+        <hatcherPawn>Chickenspider</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>

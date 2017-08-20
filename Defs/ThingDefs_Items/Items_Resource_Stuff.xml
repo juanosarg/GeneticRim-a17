@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Pure stuffs: Basics ====================-->
+
+
+  
+  <ThingDef ParentName="WoolBase">
+    <defName>MuffalopedeChitin</defName>
+    <label>muffalopede chitin</label>
+    <description>Insectoid chitin can be used as a material to craft apparel. It provides excellent protection against blunt attacks.</description>
+    <graphicData>
+		<texPath>Things/Item/MuffalopedeChitin</texPath>
+    </graphicData>
+    <stuffProps>
+      <color>(88,88,88)</color>
+      <statOffsets>
+        <ArmorRating_Heat>0.17</ArmorRating_Heat>
+        <ArmorRating_Electric>0.02</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+        <ArmorRating_Blunt>1.3</ArmorRating_Blunt>
+        <ArmorRating_Heat>2.5</ArmorRating_Heat>
+        <Insulation_Cold>2.8</Insulation_Cold>
+        <Insulation_Heat>3.6</Insulation_Heat>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  </Defs>

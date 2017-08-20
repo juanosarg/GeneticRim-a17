@@ -78,6 +78,16 @@
     </graphicData>
     
   </ThingDef>
+    <ThingDef ParentName="GeneticsBase">
+    <defName>InsectoidGenetic</defName>
+    <label>insectoid genetic material</label>
+    <description>A vial of genetic material extracted from an insectoid's corpse.</description>
+    
+    <graphicData>
+      <color>(56,124,189)</color>
+    </graphicData>
+    
+  </ThingDef>
   <ThingDef ParentName="GeneticsBase">
     <defName>ThrumboGenetic</defName>
     <label>thrumbo genetic material</label>
