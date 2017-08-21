@@ -78,21 +78,39 @@
     </graphicData>
     
   </ThingDef>
-    <ThingDef ParentName="GeneticsBase">
+  <ThingDef ParentName="GeneticsBase">
     <defName>InsectoidGenetic</defName>
     <label>insectoid genetic material</label>
     <description>A vial of genetic material extracted from an insectoid's corpse.</description>
-    
+    <statBases>
+       <MarketValue>45</MarketValue>
+    </statBases>
     <graphicData>
       <color>(56,124,189)</color>
     </graphicData>
     
   </ThingDef>
   <ThingDef ParentName="GeneticsBase">
+    <defName>HumanoidGenetic</defName>
+    <label>humanoid genetic material</label>
+    <description>A vial of genetic material extracted from a humanoid corpse.</description>
+    
+    <graphicData>
+            <texPath>Things/Item/geneticmaterialsred</texPath>
+
+    </graphicData>
+	<statBases>
+       <MarketValue>45</MarketValue>
+    </statBases>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
     <defName>ThrumboGenetic</defName>
     <label>thrumbo genetic material</label>
     <description>A vial of genetic material extracted from a thrumbo's corpse.</description>
-    
+    <statBases>
+       <MarketValue>100</MarketValue>
+    </statBases>
     <graphicData>
       <color>(228,204,0)</color>
     </graphicData>
@@ -125,6 +143,23 @@
       <li>Manufactured</li>
     </thingCategories>
 </ThingDef>
+
+   <!--=============== Hybrid Implants Base ====================-->
+
+<ThingDef ParentName="ResourceBase">
+    <defName>ImplantPlasteelWireMesh</defName>
+    <label>hybrid implant plasteel wire mesh</label>
+    <description>This plasteel wire mesh acts as a sterile scaffold for tissue growth. It is used as the base for any vat grown hybrid implants.</description>
+    <graphicData>
+      <texPath>Things/Item/ImplantPlasteelWireMesh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+    
+  </ThingDef>
 
   
 </Defs>

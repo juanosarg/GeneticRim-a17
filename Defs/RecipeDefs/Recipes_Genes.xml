@@ -307,6 +307,45 @@
 	</RecipeDef>
 	
 	<RecipeDef>
+		<defName>ExtractGenesHuman</defName>
+		<label>extract genes from a humanoid</label>
+		<description>Extract genetic material from a humanoid.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<HumanoidGenetic>1</HumanoidGenetic>
+		</products>
+		<researchPrerequisite>HumanoidGeneticEngineering</researchPrerequisite>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
 		<defName>ExtractGenesThrumbo</defName>
 		<label>extract genes from a thrumbo</label>
 		<description>Extract genetic material from a thrumbo corpse.</description>

@@ -10,7 +10,6 @@ namespace NewHatcher
 
         public CompProperties_Incubator()
         {
-            //Messages.Message("Patataaa", MessageSound.Standard);
             this.compClass = typeof(CompIncubator);
         }
     }

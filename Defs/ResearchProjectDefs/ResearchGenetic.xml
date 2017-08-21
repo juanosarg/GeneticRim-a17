@@ -32,6 +32,21 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef>
+    <defName>HumanoidGeneticEngineering</defName>
+    <label>humanoid genetic engineering</label>
+    <tab>GeneticReseach</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Allows humanoid gene extraction, and allows mixing of human and animal DNA to create animal implants.</description>
+    <baseCost>1250</baseCost>
+    <prerequisites>
+        <li>GeneticEngineering</li>
+    </prerequisites>
+   
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef>
     <defName>AdvancedGeneticEngineering</defName>
     <label>advanced genetic engineering</label>
     <tab>GeneticReseach</tab>
@@ -46,7 +61,7 @@
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <researchViewX>0</researchViewX>
-    <researchViewY>1</researchViewY>
+    <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
 

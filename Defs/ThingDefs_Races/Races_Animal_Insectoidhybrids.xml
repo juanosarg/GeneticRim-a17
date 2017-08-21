@@ -32,6 +32,7 @@
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
       </li>
     </verbs>
+
     <race>
       <body>BeetleLikeWithClaw</body>
 	  <trainableIntelligence>Advanced</trainableIntelligence>

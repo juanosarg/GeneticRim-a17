@@ -46,6 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HediffComp_Exploder.cs" />
+    <Compile Include="HediffCompProperties_Exploder.cs" />
+    <Compile Include="HediffComp_Hatcher.cs" />
+    <Compile Include="HediffCompProperties_Hatcher.cs" />
     <Compile Include="CompProperties_AberrantMucus.cs" />
     <Compile Include="CompAberrantMucus.cs" />
     <Compile Include="CompHatcherRandomizer.cs" />
