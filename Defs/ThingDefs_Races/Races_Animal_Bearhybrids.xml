@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     
+
+
+	
+	
+	
+	
   <!-- Bear - Boomalope -->
-  <ThingDef ParentName="BaseBear" ADogSaidBody="Legs">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Bearalope</defName>
     <label>bearalope</label>
     <description>A bear / boomalope hybrid. Not as strong in melee as a pure bear, but its unstable chemical reservoirs explode with great force when it dies. Unfortunately, the extreme virulence of these chemicals is harmful to the creature, and they have very short, miserable lifespans.</description>
@@ -68,6 +74,11 @@
 	  </li>
     </verbs>
     <race>
+	  <herdAnimal>false</herdAnimal>
+      <predator>true</predator>
+      <body>QuadrupedAnimalWithPaws</body>
+	  <baseHungerRate>0.35</baseHungerRate>
+	  <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 	  <intelligence>Animal</intelligence>
 	  <deathActionWorkerClass>ExplosionTypes.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
       <executionRange>6</executionRange>
@@ -81,8 +92,31 @@
 	  <useLeatherFrom>GrizzlyBear</useLeatherFrom>
       <useMeatFrom>GrizzlyBear</useMeatFrom>
       <trainableIntelligence>Intermediate</trainableIntelligence>
+	  <lifeStageAges>
+
+	   <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.4</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.8</minAge>
+          <soundWounded>Pawn_Bear_Injured</soundWounded>
+          <soundDeath>Pawn_Bear_Death</soundDeath>
+          <soundCall>Pawn_Bear_Call</soundCall>
+          <soundAngry>Pawn_Bear_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
   </ThingDef>
+  
   <PawnKindDef ParentName="BearBase">
   
     <defName>Bearalope</defName>
@@ -311,12 +345,13 @@
     </lifeStages>
   </PawnKindDef>
   <!-- Bear - Muffalo -->
-  <ThingDef ParentName="BaseBear" ADogSaidBody="Legs">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Bearffalo</defName>
     <label>bearffalo</label>
     <description>A bear / muffalo hybrid. Produces milk and wool, and is a pack animal, like a muffalo, while being slightly better in combat. It is a bit too temperamental for a pack beast.</description>
     <statBases>
-      
+		<MoveSpeed>4.3</MoveSpeed>
+     
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
       <MarketValue>500</MarketValue>
     </statBases>
@@ -400,7 +435,34 @@
       <useLeatherFrom>GrizzlyBear</useLeatherFrom>
       <useMeatFrom>GrizzlyBear</useMeatFrom>
       <packAnimal>true</packAnimal>
-	  <trainableIntelligence>Intermediate</trainableIntelligence>
+	  <trainableIntelligence>Intermediate</trainableIntelligence>	
+      <body>QuadrupedAnimalWithPaws</body>
+	  <baseHungerRate>0.35</baseHungerRate>
+	  <intelligence>Animal</intelligence>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+
+	  <lifeStageAges>
+
+	   <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.4</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.8</minAge>
+          <soundWounded>Pawn_Bear_Injured</soundWounded>
+          <soundDeath>Pawn_Bear_Death</soundDeath>
+          <soundCall>Pawn_Bear_Call</soundCall>
+          <soundAngry>Pawn_Bear_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
   </ThingDef>
   <PawnKindDef ParentName="BearBase">
@@ -457,7 +519,7 @@
     </lifeStages>
   </PawnKindDef>
   <!-- Bear - Wolf -->
-  <ThingDef ParentName="BaseBear" ADogSaidBody="LegsTail">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Bearwolf</defName>
     <label>bearwolf</label>
     <description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.</description>
@@ -533,7 +595,35 @@
 	  <useLeatherFrom>GrizzlyBear</useLeatherFrom>
       <useMeatFrom>GrizzlyBear</useMeatFrom>
 	  <wildness>0.80</wildness>  
-	 
+	  
+	  <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+	  <intelligence>Animal</intelligence>
+
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+
+      <trainableIntelligence>Advanced</trainableIntelligence>
+	  <lifeStageAges>
+
+	   <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.4</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.8</minAge>
+          <soundWounded>Pawn_Bear_Injured</soundWounded>
+          <soundDeath>Pawn_Bear_Death</soundDeath>
+          <soundCall>Pawn_Bear_Call</soundCall>
+          <soundAngry>Pawn_Bear_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
     </race>
   </ThingDef>
   <PawnKindDef ParentName="BearBase">

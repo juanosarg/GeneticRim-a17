@@ -29,7 +29,7 @@
       <li>
         <label>wearing insectoid antennae</label>
         <description>So much information! Make it stop!</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <baseMoodEffect>-5</baseMoodEffect>
       </li>
      
     </stages>

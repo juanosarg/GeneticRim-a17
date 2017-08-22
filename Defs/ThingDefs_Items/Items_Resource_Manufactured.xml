@@ -158,6 +158,9 @@
       <MarketValue>50</MarketValue>
       <Mass>1</Mass>
     </statBases>
+	<thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
     
   </ThingDef>
 
