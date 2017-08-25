@@ -60,11 +60,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>2.0</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>4.0</minAge>
+          <minAge>0.8</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -196,11 +196,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>2.0</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>4.0</minAge>
+          <minAge>1</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -341,11 +341,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>2.0</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>4.0</minAge>
+          <minAge>1</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -425,7 +425,7 @@
       <MoveSpeed>5.0</MoveSpeed>
       <ComfyTemperatureMin>-85</ComfyTemperatureMin>
       <MarketValue>3500</MarketValue>
-      <MeatAmount>120</MeatAmount>
+      <MeatAmount>60</MeatAmount>
       <!-- more than implied by body size -->
     </statBases>
     <verbs>
@@ -460,9 +460,9 @@
     <race>
       <body>QuadrupedAnimalWithHoovesAndHorn</body>
       <herdAnimal>true</herdAnimal>
-      <baseBodySize>4.2</baseBodySize>
+      <baseBodySize>8.4</baseBodySize>
       <baseHungerRate>3.5</baseHungerRate>
-      <baseHealthScale>15.0</baseHealthScale>
+      <baseHealthScale>10.0</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
 	  <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
@@ -489,11 +489,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>2.0</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>4.0</minAge>
+          <minAge>0.8</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -627,11 +627,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>1.0</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>2.0</minAge>
+          <minAge>0.8</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>

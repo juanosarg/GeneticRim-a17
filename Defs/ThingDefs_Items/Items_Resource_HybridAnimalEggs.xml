@@ -318,4 +318,71 @@
       </li>
     </comps>
   </ThingDef>
+         <!-- Chickenlizard Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>ChickenlizardEggUnfertilized</defName>
+    <label>chickenlizard egg (unfert.)</label>
+    <description>Unfertilized chickenlizard egg. It can be eaten raw, but it's much, much better cooked.</description>
+	    <graphicData>
+      <color>(67,214,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+	
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>ChickenlizardEggFertilized</defName>
+    <label>chickenlizard egg (fert.)</label>
+    <description>Fertilized chickenlizard egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+	    <graphicData>
+      <color>(67,214,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+	
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>7</hatcherDaysToHatch>
+        <hatcherPawn>Chickenlizard</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+         <!-- Spidersnake Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>SpidersnakeEggUnfertilized</defName>
+    <label>spidersnake egg (unfert.)</label>
+    <description>Unfertilized Spidersnake egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+	  <color>(17,114,134)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>SpidersnakeEggFertilized</defName>
+    <label>spidersnake egg (fert.)</label>
+    <description>Fertilized Spidersnake egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+	  <color>(17,114,134)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>10</hatcherDaysToHatch>
+        <hatcherPawn>Spidersnake</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>

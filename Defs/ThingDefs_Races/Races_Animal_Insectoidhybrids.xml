@@ -392,7 +392,7 @@
     </verbs>
     <comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>InsectJelly</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
         <milkAmount>12</milkAmount>
       </li>

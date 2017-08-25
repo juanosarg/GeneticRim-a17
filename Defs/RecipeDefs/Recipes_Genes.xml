@@ -305,6 +305,55 @@
 			</li>
 		</skillRequirements>
 	</RecipeDef>
+
+	<RecipeDef>
+		<defName>ExtractGenesReptilian</defName>
+		<label>extract genes from a reptile</label>
+		<description>Extract genetic material from a reptile.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Cobra_Corpse</li>
+						<li>Iguana_Corpse</li>
+						<li>Tortoise_Corpse</li>
+
+						
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Cobra_Corpse</li>
+				<li>Iguana_Corpse</li>
+				<li>Tortoise_Corpse</li>
+
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ReptilianGenetic>1</ReptilianGenetic>
+		</products>
+		<researchPrerequisite>ReptilianGenome</researchPrerequisite>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>7</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
 	
 	<RecipeDef>
 		<defName>ExtractGenesHuman</defName>

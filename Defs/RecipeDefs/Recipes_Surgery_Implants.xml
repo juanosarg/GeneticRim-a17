@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 
-  <RecipeDef ParentName="SurgeryFlesh">
+	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>InstallBearClaws</defName>
 		<label>install bear claws</label>
 		<description>Installs bear claws.</description>
@@ -169,6 +169,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>BoomalopeNodules</addsHediff>
 	</RecipeDef>
+	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>InstallWolfMuscularFibers</defName>
 		<label>install wolf muscular fibers</label>
@@ -211,6 +212,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>WolfMuscularFibers</addsHediff>
 	</RecipeDef>
+	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>InstallInsectoidAntennae</defName>
 		<label>install insectoid antennae</label>
@@ -295,6 +297,49 @@
 			
 		</appliedOnFixedBodyParts>
 		<addsHediff>HumanThrumboHorn</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>InstallVenomousFangs</defName>
+		<label>install venomous fangs</label>
+		<description>Installs venomous fangs.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Installing venomous fangs.</jobString>
+		<workAmount>2000</workAmount>
+		<recipeUsers>
+         <li>Human</li>
+        </recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+          <categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VenomousFangs</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+				<li>VenomousFangs</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li> 
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>VenomousFangs</addsHediff>
 	</RecipeDef>
   
 </RecipeDefs>

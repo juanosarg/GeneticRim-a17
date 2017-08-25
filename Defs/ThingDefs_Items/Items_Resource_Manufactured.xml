@@ -91,6 +91,18 @@
     
   </ThingDef>
   <ThingDef ParentName="GeneticsBase">
+    <defName>ReptilianGenetic</defName>
+    <label>reptilian genetic material</label>
+    <description>A vial of genetic material extracted from a reptilian corpse.</description>
+    <statBases>
+       <MarketValue>45</MarketValue>
+    </statBases>
+    <graphicData>
+      <color>(47,52,36)</color>
+    </graphicData>
+    
+  </ThingDef>
+  <ThingDef ParentName="GeneticsBase">
     <defName>HumanoidGenetic</defName>
     <label>humanoid genetic material</label>
     <description>A vial of genetic material extracted from a humanoid corpse.</description>

@@ -105,4 +105,21 @@
     </statBases>
   </ThingDef>
   
+  <ThingDef ParentName="BodyPartArtificialBase">
+    <defName>VenomousFangs</defName>
+    <label>venomous fangs</label>
+    <description>This hybrid implant substitutes the subject's jaw with a set of venomous fangs. Useful in combat, but not very comfortable.</description>
+    <graphicData>
+      <texPath>Things/Item/HumanGeneticHybridOrgan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+  </ThingDef>
+  
 </ThingDefs>

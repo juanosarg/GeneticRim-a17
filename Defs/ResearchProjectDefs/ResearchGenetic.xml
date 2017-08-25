@@ -32,6 +32,21 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef>
+    <defName>ReptilianGenome</defName>
+    <label>reptilian genome</label>
+    <tab>GeneticReseach</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Research ways to extract genetic material from reptiles.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>GeneticEngineering</li>
+    </prerequisites>
+    
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
     <defName>HumanoidGeneticEngineering</defName>
     <label>humanoid genetic engineering</label>
     <tab>GeneticReseach</tab>

@@ -329,7 +329,7 @@
       </li>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>ChickenffaloEggUnfertilized</eggUnfertilizedDef>
-        <eggFertilizedDef>ChickenffaloEggUnfertilized</eggFertilizedDef>
+        <eggFertilizedDef>ChickenffaloEggFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>10</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>

@@ -54,9 +54,7 @@
 			<ImplantPlasteelWireMesh>1</ImplantPlasteelWireMesh>
 		</products>
 	</RecipeDef>
-	
-	
-	
+		
 	<RecipeDef>
 		<defName>CraftBearClaws</defName>
 		<label>craft bear claws</label>
@@ -316,6 +314,7 @@
 			<WolfMuscularFibers>1</WolfMuscularFibers>
 		</products>
 	</RecipeDef>
+	
 	<RecipeDef>
 		<defName>CraftInsectoidAntennae</defName>
 		<label>craft insectoid antennae</label>
@@ -419,5 +418,56 @@
 			<HumanThrumboHorn>1</HumanThrumboHorn>
 		</products>
 	</RecipeDef>
-  
+	
+ 	<RecipeDef>
+		<defName>CraftVenomousFangs</defName>
+		<label>craft venomous fangs</label>
+		<description>This hybrid implant substitutes the subject's jaw with a set of venomous fangs. Useful in combat, but not very comfortable.</description>
+		<jobString>Crafting venomous fangs</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+				<li>TissueGrowingVat</li>	  
+		</recipeUsers>	
+		<ingredients>
+			
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ImplantPlasteelWireMesh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HumanoidGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ReptilianGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ImplantPlasteelWireMesh</li>
+				<li>HumanoidGenetic</li>
+				<li>ReptilianGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>ReptilianGenome</researchPrerequisite>
+		<products>
+			<VenomousFangs>1</VenomousFangs>
+		</products>
+	</RecipeDef> 
 </RecipeDefs>
