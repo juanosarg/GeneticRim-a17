@@ -161,7 +161,7 @@ namespace NewHatcher
         {
             if (!this.TemperatureDamaged)
             {
-                return "Incubator Progress: " + this.gestateProgress.ToStringPercent();
+                return Translator.Translate("IncubatorProgress") + ": " + this.gestateProgress.ToStringPercent();
             }
             return null;
         }

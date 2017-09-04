@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenbear</defName>
     <label>chickenbear</label>
-    <description>A chicken / bear hybrid. Lays eggs, and can defend itself in combat slightly better than a chicken</description>
+    <description>A chicken / bear hybrid. Lays eggs, and can defend itself in combat slightly better than a chicken. \n\nUseful abilities: Their sharp, small teeth can be harvested when butchering them, and they are slightly valuable and lightweight.</description>
     <statBases>
       <MoveSpeed>1.8</MoveSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -142,6 +142,11 @@
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
           <drawSize>0.95</drawSize>
         </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>VerySmallTeeth</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
       </li>
     </lifeStages>
   </PawnKindDef>
@@ -150,7 +155,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenlope</defName>
     <label>chickenlope</label>
-    <description>A chicken / boomalope hybrid. Lays eggs, and explodes on death!</description>
+    <description>A chicken / boomalope hybrid. This sickly looking creature is basically useless. Now, if you gather a lot of them, and kill them in a chain reaction... \n\nUseful abilities: Explodes on death.</description>
     <statBases>
       <MoveSpeed>2.15</MoveSpeed>
       <ComfyTemperatureMin>-15</ComfyTemperatureMin>
@@ -317,21 +322,21 @@
     </verbs>
     <comps>
 	  <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
-        <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>2</milkAmount>
+        <milkDef>ChickenffaloMilk</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
+        <milkAmount>10</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
 	  
-        <woolDef>WoolMuffalo</woolDef>
-        <shearIntervalDays>25</shearIntervalDays>
-        <woolAmount>5</woolAmount>
+        <woolDef>ChickenffaloWool</woolDef>
+        <shearIntervalDays>1</shearIntervalDays>
+        <woolAmount>4</woolAmount>
       </li>
       <li Class="CompProperties_EggLayer">
         <eggUnfertilizedDef>ChickenffaloEggUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>ChickenffaloEggFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>10</eggLayIntervalDays>
+        <eggLayIntervalDays>1.8</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
       </li>
 
@@ -450,7 +455,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsArmsTail">
     <defName>Chickenwolf</defName>
     <label>chickenwolf</label>
-    <description>A chicken / wolf hybrid. Fast moving, and with a nasty bite!</description>
+    <description>A chicken / wolf hybrid. Fast moving, and with a nasty bite! \n\nUseful abilities: Their sharp, small teeth can be harvested when butchering them, and they are slightly valuable and lightweight.</description>
     <statBases>
       <MoveSpeed>5.25</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -587,6 +592,11 @@
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
           <drawSize>0.85</drawSize>
         </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>VerySmallTeeth</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
       </li>
     </lifeStages>
   </PawnKindDef>

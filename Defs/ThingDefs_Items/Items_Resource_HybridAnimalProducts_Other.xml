@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Owlbearfeathers</defName>
+		<label>owlbear feathers</label>
+		<description>Bearchicken feathers can be gathered and processed into a fine powder, which produces a mild euphoric sensation when burned and inhaled.</description>
+		<graphicData>
+			<texPath>Things/Item/OwlbearFeathers</texPath>
+		</graphicData>  
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Mass>0.002</Mass>
+			<MaxHitPoints>10</MaxHitPoints>
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>BearwolfFangs</defName>
+		<label>bearwolf fangs</label>
+		<description>The sharpened teeth of a bearwolf. These teeth are esentially useless, but some tribes in the Rimworlds tend to use animal teeth as currency, since they are durable. Someone might pay for these.</description>
+		<graphicData>
+			<texPath>Things/Item/BearwolfFangs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>750</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1.8</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>VerySmallTeeth</defName>
+		<label>very small teeth</label>
+		<description>These minuscule teeth are very durable. Some tribes in the Rimworlds tend to use animal teeth as currency, so they might be slightly valuable.</description>
+		<graphicData>
+			<texPath>Things/Item/BearwolfFangs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Mass>0.01</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

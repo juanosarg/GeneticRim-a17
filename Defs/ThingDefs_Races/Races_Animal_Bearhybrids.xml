@@ -11,7 +11,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Bearalope</defName>
     <label>bearalope</label>
-    <description>A bear / boomalope hybrid. Not as strong in melee as a pure bear, but its unstable chemical reservoirs explode with great force when it dies. Unfortunately, the extreme virulence of these chemicals is harmful to the creature, and they have very short, miserable lifespans.</description>
+    <description>A bear / boomalope hybrid. Not as strong in melee as a pure bear, but its unstable chemical reservoirs explode with great force when it dies. Unfortunately, the extreme virulence of these chemicals is harmful to the creature, and they have very short, miserable lifespans.\n\nUseful abilities: Big explosion produced on hybrid's death.</description>
     <statBases>
       <MoveSpeed>4.0</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -174,7 +174,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Bearchicken</defName>
     <label>Bearchicken</label>
-    <description>A bear / chicken hybrid. Nicknamed "owlbear" by the colonists. Much weaker in melee than a bear, but it lays eggs, and can obviously defend itself in combat much better than a chicken</description>
+    <description>A bear / chicken hybrid. Nicknamed "owlbear" by the colonists. Much weaker in melee than a bear, but it lays eggs, and can obviously defend itself in combat much better than a chicken.\n\nUseful abilities: Lays eggs and regularly produces feathers, which can be converted into Featherdust joints.</description>
     <statBases>
       <MoveSpeed>3.0</MoveSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -240,6 +240,11 @@
 				<max>2</max>
 			</eggCountRange>
 		</li>
+		<li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>Owlbearfeathers</resourceDef>
+			<gatheringIntervalDays>1</gatheringIntervalDays>
+			<resourceAmount>17</resourceAmount>
+        </li>
     </comps>
 	
     <race>
@@ -348,7 +353,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Bearffalo</defName>
     <label>bearffalo</label>
-    <description>A bear / muffalo hybrid. Produces milk and wool, and is a pack animal, like a muffalo, while being slightly better in combat. It is a bit too temperamental for a pack beast.</description>
+    <description>A bear / muffalo hybrid. This hulking, wooly bear is a very temperamental pack animal, valued for its hardiness.\n\nUseful abilities: Produces specific high-quality milk and wool. Acts as a pack beast.</description>
     <statBases>
 		<MoveSpeed>4.3</MoveSpeed>
      
@@ -412,15 +417,16 @@
     </verbs>
 	<comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>BearffaloMilk</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
         <milkAmount>6</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
-        <shearIntervalDays>25</shearIntervalDays>
-        <woolAmount>50</woolAmount>
+        <woolDef>BearffaloWool</woolDef>
+        <shearIntervalDays>15</shearIntervalDays>
+        <woolAmount>100</woolAmount>
       </li>
+	 
     </comps>
     <race>
 	  <herdAnimal>true</herdAnimal>
@@ -522,7 +528,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Bearwolf</defName>
     <label>bearwolf</label>
-    <description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.</description>
+    <description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.\n\nUseful abilities: Good guard animal. Butchering gives Bearwolf Fangs, which can be sold.</description>
     <statBases>
       <MoveSpeed>4.75</MoveSpeed>
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -676,6 +682,11 @@
           <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
           <drawSize>1.9</drawSize>
         </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>Teeth</bodyPartGroup>
+          <thing>BearwolfFangs</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
       </li>
     </lifeStages>
   </PawnKindDef>
