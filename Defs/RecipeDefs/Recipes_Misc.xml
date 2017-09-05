@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	
+	
+	<RecipeDef>
+		<defName>NeutroamineFromSkin</defName>
+		<label>extract neutroamine from Spidersnake shed skin</label>
+		<description>Spidersnake shed skin can be ground and processed at a drug lab to extract minute amounts of neutroamine.</description>
+		<jobString>Extracting neutroamine</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+				<li>DrugLab</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>SpidersnakeSkin</li>
+					
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>SpidersnakeSkin</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Neutroamine>1</Neutroamine>
+		</products>
+		
+	</RecipeDef>
+	
+	
+ 
+
+
+  
+</RecipeDefs>

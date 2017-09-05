@@ -5,7 +5,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Bearodile</defName>
     <label>bearodile</label>
-    <description>A reptile / bear hybrid. The reptilian genes used to generate this hybrid have given it some ancient reptilian characteristics, with an appearance similar to reptiles in the Permian Period on Earth. It has also developed a venomous bite.</description>
+    <description>A reptile / bear hybrid. The reptilian genes used to generate this hybrid have given it some ancient reptilian characteristics, with an appearance similar to reptiles in the Permian Period on Earth. It has also developed a venomous bite.\n\nUseful abilities: Highly intelligent and venomous. Excellent base defender if properly trained.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -167,7 +167,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Tail">
     <defName>Boomsnake</defName>
     <label>boomsnake</label>
-    <description>A reptile / boomalope hybrid. The boomsnake is not a very strong or agile combatant. However, when it dies it explodes in a noxious cloud of venomous vapors, which can be strong enough to dissolve flesh.</description>
+    <description>A reptile / boomalope hybrid. The boomsnake is not a very strong or agile combatant. However, when it dies it explodes in a noxious cloud of venomous vapors, which can be strong enough to dissolve flesh.\n\nUseful abilities: Its toxic explosion can easily decimate an enemy raid if properly timed.</description>
     <statBases>
       <MoveSpeed>3</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -226,11 +226,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.4</minAge>
+          <minAge>0.15</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
+          <minAge>0.5</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
@@ -300,7 +300,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
     <defName>Chickenlizard</defName>
     <label>chickenlizard</label>
-    <description>A reptile / chicken hybrid. This reptilian chicken has a slightly venomous bite. Not very powerful, but considering how fast chickens breed, a horde of chickenlizards might be enough to overpower a much bigger creature with their venom.</description>
+    <description>A reptile / chicken hybrid. This reptilian chicken has a slightly venomous bite. Not very powerful, but considering how fast chickens breed, a horde of chickenlizards might be enough to overpower a much bigger creature with their venom.\n\nUseful abilities: Small, fast breeding, venomous chickens.</description>
     <statBases>
       <MoveSpeed>3</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -328,7 +328,7 @@
         <eggUnfertilizedDef>ChickenlizardEggUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>ChickenlizardEggFertilized</eggFertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>1.7</eggLayIntervalDays>
+        <eggLayIntervalDays>1.2</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
       </li>
     </comps>
@@ -358,11 +358,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.4</minAge>
+          <minAge>0.12</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
+          <minAge>0.3</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
@@ -432,7 +432,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalokomodo</defName>
     <label>muffalokomodo</label>
-    <description>A reptile / muffalo hybrid. This resilient beast can carry more weight than a regular muffalo, and has a powerful venomous bite.</description>
+    <description>A reptile / muffalo hybrid. This resilient beast can carry more weight than a regular muffalo, and has a powerful venomous bite.\n\nUseful abilities: Regularly produces enough venomous saliva to fill an ampoule with a powerful poison, which acts as a potent muscle paralysing agent.</description>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -447,6 +447,14 @@
         <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
       </li>
     </verbs>
+	<comps>
+		
+		<li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>PoisonAmpoule</resourceDef>
+			<gatheringIntervalDays>5</gatheringIntervalDays>
+			<resourceAmount>1</resourceAmount>
+        </li>
+    </comps>
 
     <race>
 	  <body>QuadrupedAnimalWithHooves</body>
@@ -474,11 +482,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.4</minAge>
+          <minAge>0.25</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
+          <minAge>0.5</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
@@ -548,7 +556,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Tail">
     <defName>Spidersnake</defName>
     <label>spidersnake</label>
-    <description>A reptile / insectoid hybrid. This venomous, armoured snake, can be very dangerous in high enough numbers.</description>
+    <description>A reptile / insectoid hybrid. This venomous, armoured snake, can be very dangerous in high enough numbers.\n\nUseful abilities: Regularly produces Spidersnake shed skin, which can be processed in a drug lab into small amounts of neutroamine, as well as Spidersnake silk.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -586,7 +594,19 @@
           <max>3</max>
         </eggCountRange>
       </li>
+	  <li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>SpidersnakeSkin</resourceDef>
+			<gatheringIntervalDays>5</gatheringIntervalDays>
+			<resourceAmount>1</resourceAmount>
+      </li>
+	  <li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>SpidersnakeSilk</resourceDef>
+			<gatheringIntervalDays>12</gatheringIntervalDays>
+			<resourceAmount>40</resourceAmount>
+      </li>
     </comps>
+	
+
     <race>
 	  <body>Snake</body>
       <predator>true</predator>
@@ -623,11 +643,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.4</minAge>
+          <minAge>0.15</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
+          <minAge>0.3</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
@@ -697,7 +717,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbolizard</defName>
     <label>thrumbolizard</label>
-    <description>A reptile / thrumbo hybrid. A massive, crocodilian creature with incredibly powerful jaws and a rabid venom.</description>
+    <description>A reptile / thrumbo hybrid. A massive, crocodilian creature with incredibly powerful jaws and a rabid venom. \n\nUseful abilities: Regularly produces enough venom to fill small ampoules. Thrumbolizard poison is 100% lethal, and there is no antidote that could act fast enough.</description>
     <statBases>
       <MoveSpeed>5.25</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -721,7 +741,14 @@
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
       </li>
     </verbs>
-
+	<comps>
+      
+	  <li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>VirulentPoison</resourceDef>
+			<gatheringIntervalDays>10</gatheringIntervalDays>
+			<resourceAmount>1</resourceAmount>
+      </li>
+    </comps>
     <race>
 	  <body>QuadrupedAnimalWithHoovesAndHorn</body>
 	  
@@ -747,7 +774,7 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.4</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
@@ -827,9 +854,9 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Wolfsnake</defName>
     <label>wolfsnake</label>
-    <description>A reptile / wolf hybrid. These serpentine predators are fast as lightning, and armed with a powerful, venomous bite.</description>
+    <description>A reptile / wolf hybrid. These serpentine predators are fast as lightning, and armed with a powerful, venomous bite. \n\nSpeed and poison make for a very effective base defender. Sheds wolfsnake skin from time to time.</description>
     <statBases>
-      <MoveSpeed>5.25</MoveSpeed>
+      <MoveSpeed>6.5</MoveSpeed>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>450</MarketValue>
 
@@ -889,7 +916,14 @@
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
       </li>
     </verbs>
-
+	<comps>
+      
+	  <li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>WolfsnakeSkin</resourceDef>
+			<gatheringIntervalDays>25</gatheringIntervalDays>
+			<resourceAmount>90</resourceAmount>
+      </li>
+    </comps>
     <race>
 	  <body>QuadrupedAnimalWithPawsAndTail</body>
 	  

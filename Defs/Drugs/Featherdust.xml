@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Featherdust>
+<Defs>
 
   <ThingDef ParentName="MakeableDrugBase">
     <defName>FeatherdustJoint</defName>
@@ -119,7 +119,7 @@
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>high on featherdustHigh</label>
+        <label>high on featherdust</label>
         <description>I just smoked ground feathers from a scientific abomination and... I feel fine.</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
@@ -226,4 +226,4 @@
     </stages>
   </ThoughtDef>
 
-</Featherdust>
+</Defs>

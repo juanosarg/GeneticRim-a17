@@ -5,13 +5,11 @@
     <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbear</defName>
     <label>thrumbear</label>
-    <description>This gargantuan beast is the result of splicing bear genes in a standard thrumbo. As strong and resilient as it is easy to anger, a thrumbear attack is something to be VERY scared of.</description>
+    <description>This gargantuan beast is the result of splicing bear genes in a standard thrumbo. As strong and resilient as it is easy to anger, a thrumbear attack is something to be VERY scared of.\n\nUseful abilities: Produces very high quality wool.</description>
     <statBases>
       <MoveSpeed>5.25</MoveSpeed>
       <ComfyTemperatureMin>-65</ComfyTemperatureMin>
       <MarketValue>3000</MarketValue>
-      <MeatAmount>100</MeatAmount>
-      <!-- more than implied by body size -->
     </statBases>
     <verbs>
       <li>
@@ -30,6 +28,14 @@
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
       </li>
     </verbs>
+	<comps>
+      
+      <li Class="CompProperties_Shearable">
+        <woolDef>ThrumbearWool</woolDef>
+        <shearIntervalDays>25</shearIntervalDays>
+        <woolAmount>150</woolAmount>
+      </li>
+    </comps>
     <race>
       <body>QuadrupedAnimalWithHoovesAndHorn</body>
       <herdAnimal>true</herdAnimal>
@@ -39,14 +45,6 @@
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
       <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
-      <leatherInsulation>1.35</leatherInsulation>
-      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
-      <leatherMarketValueFactor>7</leatherMarketValueFactor>     
-      <leatherStatFactors>
-        <ArmorRating_Blunt>3.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
-        <ArmorRating_Heat>3.2</ArmorRating_Heat>
-      </leatherStatFactors>
       <trainableIntelligence>Advanced</trainableIntelligence>
       <gestationPeriodDays>80</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -60,7 +58,7 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.5</minAge>
+          <minAge>0.4</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
@@ -139,7 +137,7 @@
     <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbalope</defName>
     <label>thrumbalope</label>
-    <description>The thrumbalope is a thrumbo that has been spliced with boomalope genes. Their huge sacs of unstable chemicals explode with unbelievable force, which has caused the colonists to nickname them "nukalopes".</description>
+    <description>The thrumbalope is a thrumbo that has been spliced with boomalope genes. Their huge sacs of unstable chemicals explode with unbelievable force, which has caused the colonists to nickname them "nukalopes".\n\nUseful abilities: Huge, dangerous explosion on death.</description>
     <statBases>
       <MoveSpeed>4</MoveSpeed>
       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
@@ -175,14 +173,6 @@
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
       <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
-      <leatherInsulation>1.35</leatherInsulation>
-      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
-      <leatherMarketValueFactor>7</leatherMarketValueFactor>     
-      <leatherStatFactors>
-        <ArmorRating_Blunt>3.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
-        <ArmorRating_Heat>3.2</ArmorRating_Heat>
-      </leatherStatFactors>
       <trainableIntelligence>Intermediate</trainableIntelligence>
       <gestationPeriodDays>80</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -196,11 +186,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.5</minAge>
+          <minAge>0.4</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>1</minAge>
+          <minAge>0.8</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -275,13 +265,13 @@
     <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumbochicken</defName>
     <label>thrumbochicken</label>
-    <description>The thrumbochicken is a thrumbo that has been spliced with avian genes. Although not very ravenous, these are lightning fast predators that could hunt any other creature with ease. These animals lay enormous eggs!</description>
+    <description>The thrumbochicken is a thrumbo that has been spliced with avian genes. Although not very ravenous, these are lightning fast predators that could hunt any other creature with ease. These animals lay enormous eggs!\n\nUseful abilities: Biggest eggs of any animal.</description>
     <statBases>
       <MoveSpeed>8</MoveSpeed>
       <ComfyTemperatureMin>-45</ComfyTemperatureMin>
       <MarketValue>3000</MarketValue>
       <MeatAmount>20</MeatAmount>
-      <!-- more than implied by body size -->
+      
     </statBases>
     <verbs>
       <li>
@@ -320,14 +310,7 @@
       <baseHealthScale>10.0</baseHealthScale>
       <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
-      <leatherInsulation>1.35</leatherInsulation>
-      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
-      <leatherMarketValueFactor>7</leatherMarketValueFactor>     
-      <leatherStatFactors>
-        <ArmorRating_Blunt>3.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
-        <ArmorRating_Heat>3.2</ArmorRating_Heat>
-      </leatherStatFactors>
+     
       <trainableIntelligence>Advanced</trainableIntelligence>
       <gestationPeriodDays>80</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -341,11 +324,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.5</minAge>
+          <minAge>0.4</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>1</minAge>
+          <minAge>0.8</minAge>
           <soundCall>Pawn_Thrumbo_Call</soundCall>
           <soundAngry>Pawn_Thrumbo_Angry</soundAngry>
           <soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -420,13 +403,12 @@
     <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumffalo</defName>
     <label>thrumffalo</label>
-    <description>This massive ungulate is the result of splicing a thrumbo with muffalo genes. Capable of carrying a huge amount of materials, there is no better possible pack animal in all the Rim.</description>
+    <description>This massive ungulate is the result of splicing a thrumbo with muffalo genes. Capable of carrying a huge amount of materials, there is no better possible pack animal in all the Rim (yet! Science never rests).\n\nUseful abilities: Produces high quality milk and wool.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <ComfyTemperatureMin>-85</ComfyTemperatureMin>
       <MarketValue>3500</MarketValue>
       <MeatAmount>60</MeatAmount>
-      <!-- more than implied by body size -->
     </statBases>
     <verbs>
       <li>
@@ -447,12 +429,12 @@
     </verbs>
 	<comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>ThrumffaloMilk</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>24</milkAmount>
+        <milkAmount>20</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
+        <woolDef>ThrumffaloWool</woolDef>
         <shearIntervalDays>25</shearIntervalDays>
         <woolAmount>150</woolAmount>
       </li>
@@ -466,15 +448,6 @@
       <foodType>VegetarianRoughAnimal</foodType>
 	  <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
-      <leatherColor>(233,233,233)</leatherColor>
-      <leatherInsulation>1.35</leatherInsulation>
-      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
-      <leatherMarketValueFactor>7</leatherMarketValueFactor>
-      <leatherStatFactors>
-        <ArmorRating_Blunt>3.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
-        <ArmorRating_Heat>3.2</ArmorRating_Heat>
-      </leatherStatFactors>
 	  <packAnimal>true</packAnimal>
       <trainableIntelligence>Intermediate</trainableIntelligence>
       <gestationPeriodDays>80</gestationPeriodDays>
@@ -489,7 +462,7 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.5</minAge>
+          <minAge>0.4</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
@@ -568,7 +541,7 @@
     <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Thrumwolf</defName>
     <label>thrumwolf</label>
-    <description>This colossal predator is the result of splicing a thrumbo with wolf genes. Fast and really hungry, all the time. Entire ecosystems can be decimated by the insane apetite of a Thrumbowolf.</description>
+    <description>This colossal predator is the result of splicing a thrumbo with wolf genes. Fast and really hungry, all the time. Entire ecosystems can be decimated by the insane apetite of a Thrumbowolf.\n\nUseful abilities: fast attacking predator which will tear through your enemies if properly trained. Needs a LOT of food, though.</description>
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -579,7 +552,7 @@
     <verbs>
       <li>
         <verbClass>Verb_MeleeAttack</verbClass>
-        <defaultCooldownTime>1.2</defaultCooldownTime>
+        <defaultCooldownTime>1.0</defaultCooldownTime>
         <meleeDamageBaseAmount>18</meleeDamageBaseAmount>
         <meleeDamageDef>Scratch</meleeDamageDef>
         <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
@@ -605,15 +578,6 @@
 	  <foodType>CarnivoreAnimal</foodType>
 	  <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
-      <leatherColor>(233,233,233)</leatherColor>
-      <leatherInsulation>1.35</leatherInsulation>
-      <leatherCommonalityFactor>0.1</leatherCommonalityFactor>
-      <leatherMarketValueFactor>7</leatherMarketValueFactor>
-      <leatherStatFactors>
-        <ArmorRating_Blunt>3.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>4.0</ArmorRating_Sharp>
-        <ArmorRating_Heat>3.2</ArmorRating_Heat>
-      </leatherStatFactors>
       <trainableIntelligence>Advanced</trainableIntelligence>
       <gestationPeriodDays>80</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -627,7 +591,7 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.5</minAge>
+          <minAge>0.4</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>

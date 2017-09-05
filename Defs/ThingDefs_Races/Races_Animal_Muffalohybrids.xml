@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalobear</defName>
     <label>muffalobear</label>
-    <description>A Muffalo / bear hybrid. The Muffalobear is a stronger variant of muffalo that doesn't produce wool</description>
+    <description>A Muffalo / bear hybrid. The Muffalobear is a stronger variant of muffalo that doesn't produce wool. \n\nUseful abilities: Muffalobears produce a special milk, less nutritive but with a mild euphoric effect. They are pack animals that carry more weight than regular muffalos.</description>
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
@@ -21,7 +21,7 @@
     </verbs>
     <comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>MuffalobearMilk</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
         <milkAmount>12</milkAmount>
       </li>
@@ -126,7 +126,7 @@
   <ThingDef ParentName="AnimalThingBase"  ADogSaidBody="LegsTail">
     <defName>Muffalope</defName>
     <label>muffalope</label>
-    <description>A Muffalo / boomalope hybrid. Because it's so cool when your caravans can EXPLODE</description>
+    <description>A Muffalo / boomalope hybrid. Because it's so cool when your caravans can EXPLODE. \n\nUseful abilities: Milk produced by these animals is not edible, but highly explosive, so it can be used to build IEDs. Can be sheared for low quality wool.</description>
     <statBases>
       <MoveSpeed>3.2</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -143,12 +143,12 @@
     </verbs>
     <comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>MuffalopeMilk</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>10</milkAmount>
+        <milkAmount>1</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
+        <woolDef>MuffalopeWool</woolDef>
         <shearIntervalDays>25</shearIntervalDays>
         <woolAmount>80</woolAmount>
       </li>
@@ -252,7 +252,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalochicken</defName>
     <label>muffalochicken</label>
-    <description>A Muffalo / chicken hybrid. A very strange bovine beast that lays eggs.</description>
+    <description>A Muffalo / chicken hybrid. A very strange bovine beast that lays eggs. \n\nUseful abilities: Produces high quality milk, wool and eggs.</description>
     <statBases>
       <MoveSpeed>3.2</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -276,12 +276,12 @@
     </verbs>
     <comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>MuffalochickenMilk</milkDef>
         <milkIntervalDays>2</milkIntervalDays>
-        <milkAmount>10</milkAmount>
+        <milkAmount>12</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
+        <woolDef>MuffalochickenWool</woolDef>
         <shearIntervalDays>27</shearIntervalDays>
         <woolAmount>60</woolAmount>
       </li>
@@ -390,9 +390,9 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Muffalowolf</defName>
     <label>muffalowolf</label>
-    <description>A Muffalo / wolf hybrid. Faster than a standard muffalo, and better able to defend itself, but has lost the capacity to produce milk</description>
+    <description>A Muffalo / wolf hybrid. Faster than a standard muffalo, and better able to defend itself, but has lost the capacity to produce milk. \n\nUseful abilities: Quite fast pack beast.</description>
     <statBases>
-      <MoveSpeed>4.2</MoveSpeed>
+      <MoveSpeed>5</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
       <MarketValue>450</MarketValue>
     </statBases>
@@ -409,7 +409,7 @@
      
        
       <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
+        <woolDef>MuffalowolfWool</woolDef>
         <shearIntervalDays>25</shearIntervalDays>
         <woolAmount>90</woolAmount>
       </li>

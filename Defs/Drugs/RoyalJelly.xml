@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RoyalJelly>
+<Defs>
 
   <ThingDef ParentName="DrugBase">
     <defName>RoyalJelly</defName>
@@ -83,7 +83,7 @@
     <stages>
       <li>
         <label>royal jelly warmth</label>
-        <description>Royal jelly is delicious... I can't believe it is produced by a disgusting insect.</description>
+        <description>Royal jelly is delicious... I want to eat more of it!</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
@@ -156,4 +156,4 @@
     </stages>
   </ThoughtDef>
 
-</RoyalJelly>
+</Defs>

@@ -638,7 +638,7 @@
     <label>wolfscarab</label>
     <description>A wolf / megascarab hybrid. These ferocious creatures are faster than most animals, and really effective in combat. Unfortunately, they can't reproduce on their own.\n\nUseful abilities: Faster than most other creatures.</description>
     <statBases>
-      <MoveSpeed>8</MoveSpeed>
+      <MoveSpeed>9</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
       <MarketValue>400</MarketValue>
       <LeatherAmount>0</LeatherAmount>

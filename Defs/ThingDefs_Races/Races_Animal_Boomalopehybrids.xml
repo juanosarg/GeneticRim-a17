@@ -192,11 +192,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.2</minAge>
+          <minAge>0.1</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.5</minAge>
+          <minAge>0.3</minAge>
           <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
           <soundDeath>Pawn_Muffalo_Death</soundDeath>
           <soundCall>Pawn_Muffalo_Call</soundCall>
