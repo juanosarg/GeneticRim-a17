@@ -93,8 +93,8 @@
 	
 	<RecipeDef>
 		<defName>ExtractGenesChicken</defName>
-		<label>extract genes from a chicken</label>
-		<description>Extract genetic material from a chicken corpse.</description>
+		<label>extract genes from a bird</label>
+		<description>Extract genetic material from any bird corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -110,6 +110,9 @@
 					<thingDefs>
 						<li>Chicken_Corpse</li>
 						<li>Turkey_Corpse</li>
+						<li>Ostrich_Corpse</li>
+						<li>Emu_Corpse</li>
+						<li>Cassowary_Corpse</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -120,6 +123,9 @@
 			<thingDefs>
 				<li>Chicken_Corpse</li>
 				<li>Turkey_Corpse</li>
+				<li>Ostrich_Corpse</li>
+				<li>Emu_Corpse</li>
+				<li>Cassowary_Corpse</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -215,8 +221,8 @@
 	
 	<RecipeDef>
 		<defName>ExtractGenesWolf</defName>
-		<label>extract genes from a wolf</label>
-		<description>Extract genetic material from a wolf corpse.</description>
+		<label>extract genes from a canid</label>
+		<description>Extract genetic material from a wolf, warg or dog corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -233,6 +239,9 @@
 						<li>WolfTimber_Corpse</li>
 						<li>WolfArctic_Corpse</li>
 						<li>Warg_Corpse</li>
+						<li>Yorkshireterrier_Corpse</li>
+						<li>Husky_Corpse</li>
+						<li>Labrador_Corpse</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -244,6 +253,9 @@
 				<li>WolfTimber_Corpse</li>
 				<li>WolfArctic_Corpse</li>
 				<li>Warg_Corpse</li>
+				<li>Yorkshireterrier_Corpse</li>
+				<li>Husky_Corpse</li>
+				<li>Labrador_Corpse</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

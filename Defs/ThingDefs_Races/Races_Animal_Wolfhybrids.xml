@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Wolfbear</defName>
     <label>wolfbear</label>
-    <description>A Wolf / Bear hybrid. Very similar to the standard timber wolf, but with better stamina</description>
+    <description>A Wolf / Bear hybrid. Very similar to the standard timber wolf, but with better stamina.\n\nUseful abilities: Good guard animal. Butchering gives Wolfbear Paws, which can be sold.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -165,6 +165,11 @@
           <drawSize>1.95</drawSize>
         </dessicatedBodyGraphicData>
       </li>
+	  <butcherBodyPart>
+          <bodyPartGroup>FrontRightPaw</bodyPartGroup>
+          <thing>WolfbearPaws</thing>
+          <allowFemale>true</allowFemale>
+        </butcherBodyPart>
     </lifeStages>
   </PawnKindDef>
 
@@ -172,7 +177,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Wolfalope</defName>
     <label>wolfalope</label>
-    <description>A Wolf / Boomalope hybrid. A very dangerous predator that tends to explode when confronted with prey too large for them</description>
+    <description>A Wolf / Boomalope hybrid. A very dangerous predator that tends to explode when confronted with prey too large for them. Friction between the creature's pelt and the boomalope nodules constantly creates static electricity, which is suddenly liberated when the creature dies and the nodules explode.\n\nUseful abilities: Explodes on death in a dangerous electromagnetic pulse (EMP damage).</description>
     <statBases>
       <MoveSpeed>5.5</MoveSpeed>
       <ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -235,8 +240,8 @@
     </verbs>
     <race>
       <body>QuadrupedAnimalWithPawsAndTail</body>
-	  <deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
-      <executionRange>4</executionRange>
+	  <deathActionWorkerClass>ExplosionTypes.DeathActionWorker_EMPExplosion</deathActionWorkerClass>
+      <executionRange>6</executionRange>
       <predator>true</predator>
       
       <baseBodySize>0.85</baseBodySize>
@@ -342,7 +347,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Wolfchicken</defName>
     <label>wolfchicken</label>
-    <description>A Wolf / Chicken hybrid. You know the saying: when you let the wolves guard the hen house, there's bound to be a few chicken dinners. Well, not anymore</description>
+    <description>A Wolf / Chicken hybrid. You know the saying: when you let the wolves guard the hen house, there's bound to be a few chicken dinners. Well, not anymore.\n\nUseful abilities: Egg layer. Regularly produces feathers that can be sold for a profit.</description>
     <statBases>
       <MoveSpeed>6</MoveSpeed>
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -410,6 +415,11 @@
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>5</eggLayIntervalDays>
         <eggCountRange>1</eggCountRange>
+      </li>
+	  <li Class="NewAnimalSubproducts.CompProperties_AnimalProduct">
+			<resourceDef>WolfchickenFeathers</resourceDef>
+			<gatheringIntervalDays>4</gatheringIntervalDays>
+			<resourceAmount>1</resourceAmount>
       </li>
     </comps>
     <race>
@@ -520,7 +530,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Wolffalo</defName>
     <label>wolffalo</label>
-    <description>A Wolf / Muffalo hybrid. Not incredibly good as a pack beast, but a very fast wool producer</description>
+    <description>A Wolf / Muffalo hybrid. Not incredibly good as a pack beast, but a very fast wool producer.\n\nActs as a pack beast. Produces small amounts of milk and wool at a quite fast rate.</description>
     <statBases>
       <MoveSpeed>5.2</MoveSpeed>
       <ComfyTemperatureMin>-60</ComfyTemperatureMin>
@@ -569,14 +579,14 @@
     </verbs>
 	<comps>
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
-        <milkIntervalDays>2</milkIntervalDays>
+        <milkDef>WolffaloMilk</milkDef>
+        <milkIntervalDays>1</milkIntervalDays>
         <milkAmount>5</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
-        <shearIntervalDays>5</shearIntervalDays>
-        <woolAmount>17</woolAmount>
+        <woolDef>WolffaloWool</woolDef>
+        <shearIntervalDays>3</shearIntervalDays>
+        <woolAmount>20</woolAmount>
       </li>
 
     </comps>

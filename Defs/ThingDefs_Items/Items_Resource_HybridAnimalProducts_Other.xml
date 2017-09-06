@@ -21,7 +21,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>BearwolfFangs</defName>
 		<label>bearwolf fangs</label>
-		<description>The sharpened teeth of a bearwolf. These teeth are esentially useless, but some tribes in the Rimworlds tend to use animal teeth as currency, since they are durable. Someone might pay for these.</description>
+		<description>The sharpened teeth of a bearwolf. These teeth are essentially useless, but some primitive tribes in the Rimworlds tend to use animal teeth as currency, since they are durable. Someone might pay for these.</description>
 		<graphicData>
 			<texPath>Things/Item/BearwolfFangs</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -45,6 +45,58 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
+		<defName>WolfchickenFeathers</defName>
+		<label>wolfchicken feathers</label>
+		<description>Wolfchicken feathers are colourful and pretty. Quite useless, but someone might pay for them as a decorative object.</description>
+		<graphicData>
+			<texPath>Things/Item/WolfchickenFeathers</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>75</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Mass>0.1</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>WolfbearPaws</defName>
+		<label>wolfbear paws</label>
+		<description>The huge, severed paws of a wolfbear. Such trophies are usually considered by primitive peoples to be a token of good luck. Someone might pay for these.</description>
+		<graphicData>
+			<texPath>Things/Item/AnimalPaws</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>450</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>1</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
 		<defName>VerySmallTeeth</defName>
 		<label>very small teeth</label>
 		<description>These minuscule teeth are very durable. Some tribes in the Rimworlds tend to use animal teeth as currency, so they might be slightly valuable.</description>
@@ -53,7 +105,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>1</stackLimit>
+		<stackLimit>50</stackLimit>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<MarketValue>25</MarketValue>

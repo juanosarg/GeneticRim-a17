@@ -225,5 +225,35 @@
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
   </ThingDef>
+  
+  	<ThingDef ParentName="ResourceBase">
+    <defName>WolffaloMilk</defName>
+    <label>wolffalo milk</label>
+    <description>This milk seems to be filled with strands of grey wool. Disgusting, and quite hard to drink...</description>
+    <graphicData>
+      <texPath>Things/Item/WoolMilk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <nutrition>0.02</nutrition>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
 
 </Defs>
