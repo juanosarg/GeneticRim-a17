@@ -69,7 +69,11 @@ namespace NewAnimalSubproducts
                 return null;
             }
 
-            if ((ResourceDef.ToString() == "Owlbearfeathers") || (ResourceDef.ToString() == "WolfchickenFeathers"))
+            if (ResourceDef.ToString() == "Owlbearfeathers")
+            {
+                return Translator.Translate("FeatherGrowth") + ": " + base.Fullness.ToStringPercent();
+            }
+            else if (ResourceDef.ToString() == "WolfchickenFeathers")
             {
                 return Translator.Translate("FeatherGrowth") + ": " + base.Fullness.ToStringPercent();
             }
@@ -81,18 +85,32 @@ namespace NewAnimalSubproducts
             {
                 return Translator.Translate("SacGrowth") + ": " + base.Fullness.ToStringPercent();
             }
-            else if ((ResourceDef.ToString() == "ChickenspiderSilk")||(ResourceDef.ToString() == "SpidersnakeSilk"))
+            else if (ResourceDef.ToString() == "ChickenspiderSilk")
             {
                 return Translator.Translate("SilkGrowth") + ": " + base.Fullness.ToStringPercent();
             }
-            else if ((ResourceDef.ToString() == "PoisonAmpoule") || (ResourceDef.ToString() == "VirulentPoison"))
+            else if (ResourceDef.ToString() == "PoisonAmpoule")
             {
                 return Translator.Translate("PoisonGrowth") + ": " + base.Fullness.ToStringPercent();
             }
-            else if ((ResourceDef.ToString() == "SpidersnakeSkin") || (ResourceDef.ToString() == "WolfsnakeSkin"))
+            else if (ResourceDef.ToString() == "VirulentPoison")
+            {
+                return Translator.Translate("PoisonGrowth") + ": " + base.Fullness.ToStringPercent();
+            }
+            else if (ResourceDef.ToString() == "SpidersnakeSkin")
             {
                 return Translator.Translate("SkinShed") + ": " + base.Fullness.ToStringPercent();
             }
+            else if (ResourceDef.ToString() == "WolfsnakeSkin")
+            {
+                return Translator.Translate("SkinShed") + ": " + base.Fullness.ToStringPercent();
+            }
+            else if (ResourceDef.ToString() == "SpidersnakeSilk")
+            {
+                return Translator.Translate("SilkGrowth") + ": " + base.Fullness.ToStringPercent();
+            }
+            
+           
             else  return Translator.Translate("ResourceGrowth") + ": " + base.Fullness.ToStringPercent();
         }
 

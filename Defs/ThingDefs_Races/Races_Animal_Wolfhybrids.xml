@@ -164,12 +164,13 @@
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
           <drawSize>1.95</drawSize>
         </dessicatedBodyGraphicData>
-      </li>
-	  <butcherBodyPart>
+		<butcherBodyPart>
           <bodyPartGroup>FrontRightPaw</bodyPartGroup>
           <thing>WolfbearPaws</thing>
           <allowFemale>true</allowFemale>
         </butcherBodyPart>
+      </li>
+	  
     </lifeStages>
   </PawnKindDef>
 

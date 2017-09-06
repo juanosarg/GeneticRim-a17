@@ -64,7 +64,6 @@
 		<thingCategories>
 			<li>AnimalProductRaw</li>
 		</thingCategories>
-		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeTags>
 			<li>Exotic</li>
 		</tradeTags>
@@ -116,7 +115,6 @@
 		<thingCategories>
 			<li>AnimalProductRaw</li>
 		</thingCategories>
-		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeTags>
 			<li>Exotic</li>
 		</tradeTags>

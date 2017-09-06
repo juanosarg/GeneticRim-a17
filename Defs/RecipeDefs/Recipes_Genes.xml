@@ -239,9 +239,9 @@
 						<li>WolfTimber_Corpse</li>
 						<li>WolfArctic_Corpse</li>
 						<li>Warg_Corpse</li>
-						<li>Yorkshireterrier_Corpse</li>
+						<li>YorkshireTerrier_Corpse</li>
 						<li>Husky_Corpse</li>
-						<li>Labrador_Corpse</li>
+						<li>LabradorRetriever_Corpse</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -253,9 +253,9 @@
 				<li>WolfTimber_Corpse</li>
 				<li>WolfArctic_Corpse</li>
 				<li>Warg_Corpse</li>
-				<li>Yorkshireterrier_Corpse</li>
+				<li>YorkshireTerrier_Corpse</li>
 				<li>Husky_Corpse</li>
-				<li>Labrador_Corpse</li>
+				<li>LabradorRetriever_Corpse</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
