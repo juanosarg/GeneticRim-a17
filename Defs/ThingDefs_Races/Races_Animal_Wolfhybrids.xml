@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>Wolfbear</defName>
     <label>wolfbear</label>
-    <description>A Wolf / Bear hybrid. Very similar to the standard timber wolf, but with better stamina.\n\nUseful abilities: Good guard animal. Butchering gives Wolfbear Paws, which can be sold.</description>
+    <description>A Wolf / Bear hybrid. Very similar to the standard timber wolf, but with better stamina.\n\nUseful abilities: Good guard animal. Butchering gives Wolfbear paws, which can be sold.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>

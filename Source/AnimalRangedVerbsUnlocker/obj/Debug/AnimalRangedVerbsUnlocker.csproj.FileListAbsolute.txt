@@ -1,0 +1,4 @@
+C:\Users\Sarg\Documents\RW_AnimalRangedVerbsUnlocker-0.13.0.1\Assemblies\AnimalRangedVerbsUnlocker.dll
+C:\Users\Sarg\Documents\RW_AnimalRangedVerbsUnlocker-0.13.0.1\Source\AnimalRangedVerbsUnlocker\obj\Debug\AnimalRangedVerbsUnlocker.csprojResolveAssemblyReference.cache
+C:\Users\Sarg\Documents\RW_AnimalRangedVerbsUnlocker-0.13.0.1\Source\AnimalRangedVerbsUnlocker\obj\Debug\AnimalRangedVerbsUnlocker.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\GeneticRim\Assemblies\AnimalRangedVerbsUnlocker.dll

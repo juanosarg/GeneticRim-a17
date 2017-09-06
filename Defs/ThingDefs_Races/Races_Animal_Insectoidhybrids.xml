@@ -636,7 +636,7 @@
   <ThingDef ParentName="BaseInsect" ADogSaidBody="Legs">
     <defName>Wolfscarab</defName>
     <label>wolfscarab</label>
-    <description>A wolf / megascarab hybrid. These ferocious creatures are faster than most animals, and really effective in combat. Unfortunately, they can't reproduce on their own.\n\nUseful abilities: Faster than most other creatures.</description>
+    <description>A wolf / megascarab hybrid. These ferocious creatures are faster than most animals, and really effective in combat. Unfortunately, they can't reproduce on their own.\n\nUseful abilities: Much faster than most other creatures.</description>
     <statBases>
       <MoveSpeed>9</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
