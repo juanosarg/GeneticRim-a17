@@ -79,5 +79,19 @@
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
+  <ResearchProjectDef>
+    <defName>AnimalEnrichment</defName>
+    <label>animal enrichment</label>
+    <tab>GeneticReseach</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Research ways to improve existing animals, and accelerate their growth.</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>GeneticEngineering</li>
+    </prerequisites>
+    
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
 
 </Defs>

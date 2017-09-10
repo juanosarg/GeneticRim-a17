@@ -7,4 +7,11 @@
     <reportString>gathering animal resource from TargetA.</reportString>
   </JobDef>
   
+    <JobDef>
+    <defName>CarryToAgeAccelerationPod</defName>
+    <driverClass>GeneticBuildings.JobDriver_CarryToAgeAccelerationPod</driverClass>
+    <reportString>carrying TargetA to age acceleration pod.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  
 </Defs>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>AgeAccelerationPod</defName>
+    <label>age acceleration pod</label>
+    <thingClass>GeneticBuildings.Building_AgeAccelerationPod</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 3)</drawSize>
+    </graphicData>
+    <researchPrerequisites><li>AnimalEnrichment</li></researchPrerequisites>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>3200</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Animals inside this acceleration pod age and mature very quickly.</description>
+    <size>(1,2)</size>
+    <designationCategory>GeneticsTab</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+    <costList>
+      <Steel>180</Steel>
+      <Uranium>5</Uranium>
+      <Component>8</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.66</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <staticSunShadowHeight>0.4</staticSunShadowHeight>
+  </ThingDef>
+
+  
+</ThingDefs>
