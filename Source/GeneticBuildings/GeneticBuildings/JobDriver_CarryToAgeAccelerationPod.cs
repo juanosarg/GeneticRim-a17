@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
 using System.Diagnostics;
 using Verse;
@@ -8,9 +8,9 @@ namespace GeneticBuildings
 {
     public class JobDriver_CarryToAgeAccelerationPod : JobDriver
     {
-        private const TargetIndex TakeeInd = TargetIndex.A;
+        private TargetIndex TakeeInd = TargetIndex.A;
 
-        private const TargetIndex DropPodInd = TargetIndex.B;
+        private TargetIndex DropPodInd = TargetIndex.B;
 
         protected Pawn Takee
         {
@@ -31,26 +31,47 @@ namespace GeneticBuildings
         [DebuggerHidden]
         protected override IEnumerable<Toil> MakeNewToils()
         {
-            this.FailOnDestroyedOrNull(TargetIndex.A);
-            this.FailOnDestroyedOrNull(TargetIndex.B);
-            this.FailOnAggroMentalState(TargetIndex.A);
-            yield return Toils_Reserve.Reserve(TargetIndex.A, 1, -1, null);
-            yield return Toils_Reserve.Reserve(TargetIndex.B, 1, -1, null);
-            yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.OnCell).FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnDespawnedNullOrForbidden(TargetIndex.B).FailOn(() => this.DropPod.GetDirectlyHeldThings().Count > 0).FailOn(() => !this.Takee.Downed).FailOn(() => !this.pawn.CanReach(this.Takee, PathEndMode.OnCell, Danger.Deadly, false, TraverseMode.ByPawn)).FailOnSomeonePhysicallyInteracting(TargetIndex.A);
-            yield return Toils_Haul.StartCarryThing(TargetIndex.A, false, false);
-            yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.InteractionCell);
-            Toil prepare = Toils_General.Wait(500);
-            prepare.FailOnCannotTouch(TargetIndex.B, PathEndMode.InteractionCell);
-            prepare.WithProgressBarToilDelay(TargetIndex.B, false, -0.5f);
-            yield return prepare;
-            yield return new Toil
-            {
-                initAction = delegate
-                {
-                    this.DropPod.TryAcceptThing(this.Takee, true);
-                },
-                defaultCompleteMode = ToilCompleteMode.Instant
-            };
+            /* Log.Message(Takee.ToString());
+             Log.Message(DropPod.ToString());
+              Log.Message(DropPodInd.ToString());
+              Log.Message(TakeeInd.ToString());
+
+              // this.FailOnDestroyedOrNull(TargetIndex.A);
+              //  this.FailOnDestroyedOrNull(TargetIndex.B);
+              //  this.FailOnAggroMentalState(TargetIndex.A);
+             // yield return Toils_Reserve.Reserve(this.TakeeInd, 1, -1, null);
+              yield return Toils_Reserve.Reserve(this.DropPodInd, 1, -1, null);
+             yield return Toils_Haul.StartCarryThing(TakeeInd, false, false);
+              //eld return Toils_General.Wait(75500);
+
+              // yield return Toils_Goto.GotoThing(this.DropPodInd, PathEndMode.Touch);
+
+
+
+              Toil prepare = Toils_General.Wait(500);
+               prepare.FailOnCannotTouch(TargetIndex.B, PathEndMode.InteractionCell);
+               prepare.WithProgressBarToilDelay(TargetIndex.B, false, -0.5f);
+               yield return prepare;
+               yield return new Toil
+               {
+                   initAction = delegate
+                   {
+                       this.DropPod.TryAcceptThing(this.Takee, true);
+                   },
+                   defaultCompleteMode = ToilCompleteMode.Instant
+
+
+               };
+              Log.Message("Ending");
+              yield break;
+              */
+            Log.Message(Toils_Reserve.Reserve(this.DropPodInd, 1).ToString());
+            yield return Toils_Reserve.Reserve(this.DropPodInd, 1);
+            Log.Message(Toils_Goto.GotoThing(this.DropPodInd, PathEndMode.Touch).ToString());
+            yield return Toils_Goto.GotoThing(this.DropPodInd, PathEndMode.Touch);
+
+
+            yield break;
         }
     }
 }

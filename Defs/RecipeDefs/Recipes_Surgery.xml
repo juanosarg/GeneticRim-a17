@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CarryToAgePod</defName>
+		<label>carry to age acceleration pod</label>
+		<description>Injects animal with age serum and carries animal to age acceleration pod.</description>
+
+		<workerClass>GeneticBuildings.Recipe_CarryToAgePod</workerClass>
+		<jobString>Carrying to age acceleration pod.</jobString>
+		<workAmount>500</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>true</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+
+	
+
+
+
+</RecipeDefs>

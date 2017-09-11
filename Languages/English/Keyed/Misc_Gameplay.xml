@@ -13,6 +13,8 @@
   <SkinShed>Skin shedding time</SkinShed>
 
   <AccAgeProg>Accelerated aging progress</AccAgeProg>
+  <CannotCarryToAccelerationPod>Cannot carry to age acceleration pod</CannotCarryToAccelerationPod>
+  <NoAccelerationPod>No valid age acceleration pod found</NoAccelerationPod>
  
 
 </LanguageData>

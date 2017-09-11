@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="Building_AgeAccelerationPod.cs" />
     <Compile Include="JobDriver_CarryToAgeAccelerationPod.cs" />
+    <Compile Include="LocalJobDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recipe_CarryToAgePod.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
