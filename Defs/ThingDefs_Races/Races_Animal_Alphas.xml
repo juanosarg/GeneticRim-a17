@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+	<!-- Bear -->
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
+    <defName>AlphaBear</defName>
+    <label>alpha bear</label>
+    <description>This massive bear can grow to sizes dwarfing regular grizzly bears, reaching up to a metrical ton in weight. Their thick pelt is an almost perfect adaptation to cold climates, allowing them to survive for months in hibernation if necessary.\n\nWhile still omnivorous, their teeth are better suited to a higher degree of herbivory than grizzly bears.\n\nUseful abilities: Alpha bear pelts can be sold for profit, or converted into decorational rugs.</description>
+    
+	
+	<statBases>
+      <MoveSpeed>3.8</MoveSpeed>
+      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+      <MarketValue>1400</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>2.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>25</meleeDamageBaseAmount>
+        <meleeDamageDef>Scratch</meleeDamageDef>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>27</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>2.0</defaultCooldownTime>
+        <meleeDamageBaseAmount>25</meleeDamageBaseAmount>
+        <meleeDamageDef>Scratch</meleeDamageDef>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>27</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>18</meleeDamageBaseAmount>
+        <meleeDamageDef>Bite</meleeDamageDef>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>24</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>8</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <commonality>0.01</commonality>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <useLeatherFrom>GrizzlyBear</useLeatherFrom>
+      <useMeatFrom>GrizzlyBear</useMeatFrom>
+      <herdAnimal>false</herdAnimal>
+      <predator>true</predator>
+      <body>QuadrupedAnimalWithPaws</body>
+      <baseHungerRate>0.45</baseHungerRate>
+      <baseBodySize>2.95</baseBodySize>
+      <baseHealthScale>2.75</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <gestationPeriodDays>30</gestationPeriodDays>
+      <wildness>0.80</wildness>
+      <lifeExpectancy>32</lifeExpectancy>
+      <trainableIntelligence>Advanced</trainableIntelligence>
+      <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.4</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.8</minAge>
+          <soundWounded>Pawn_Bear_Injured</soundWounded>
+          <soundDeath>Pawn_Bear_Death</soundDeath>
+          <soundCall>Pawn_Bear_Call</soundCall>
+          <soundAngry>Pawn_Bear_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+    </race>
+   
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+  	<defName>AlphaBear</defName>
+    <label>alpha bear</label>
+    <race>AlphaBear</race>
+    <combatPower>270</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+	<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpha/Bear/Alphabear</texPath>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpha/Bear/Alphabear</texPath>
+          <drawSize>2.8</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpha/Bear/Alphabear</texPath>
+          <drawSize>3.8</drawSize>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+          <drawSize>2.7</drawSize>
+        </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+          <thing>HugeBearPelt</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+	
+	<!-- Wildboar -->
+
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Legs">
+    <defName>AlphaWildBoar</defName>
+    <label>alpha wild boar</label>
+    <description>This strong, muscular creature is fiercely territorial, and its powerful curved tusks can be extremely dangerous for the unwary hunter.</description>
+    <statBases>
+      <MoveSpeed>5.5</MoveSpeed>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <MarketValue>350</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>14</meleeDamageBaseAmount>
+        <meleeDamageDef>Scratch</meleeDamageDef>
+        <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>1.65</defaultCooldownTime>
+        <meleeDamageBaseAmount>7</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <commonality>0.01</commonality>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <race>
+      <body>QuadrupedAnimalWithHoovesAndTusks</body>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+	  <baseHungerRate>0.45</baseHungerRate>
+	  <foodType>OmnivoreRoughAnimal</foodType>
+      <wildness>0.50</wildness>
+      <trainableIntelligence>Advanced</trainableIntelligence>
+      <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+      <useMeatFrom>Pig</useMeatFrom>
+      <useLeatherFrom>Pig</useLeatherFrom>
+      <gestationPeriodDays>13</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(3, 1)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>20</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.35</minAge>
+          <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+          <soundDeath>Pawn_Wildboar_Death</soundDeath>
+          <soundCall>Pawn_Wildboar_Call</soundCall>
+          <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+
+  </ThingDef>  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>AlphaWildBoar</defName>
+    <label>alpha wild boar</label>
+    <race>AlphaWildBoar</race>
+    <combatPower>75</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+	<wildSpawn_spawnWild>false</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpha/Boar/Alphaboar</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.30, 0.25, 0.20)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpha/Boar/Alphaboar</texPath>
+          <drawSize>2.2</drawSize>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+          <drawSize>1.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Alpha/Boar/Alphaboar</texPath>
+          <drawSize>2.75</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.4)</volume>
+            <offset>(0,0,-0.05)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+		<butcherBodyPart>
+          <bodyPartGroup>TuskAttackTool</bodyPartGroup>
+          <thing>AlphaBoarTusks</thing>
+        </butcherBodyPart>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+
+
+</Defs>

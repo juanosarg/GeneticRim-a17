@@ -292,4 +292,125 @@
 
   </ThingDef>
   
+  <ThingDef ParentName="BenchBase">
+    <DefName>AlphaSerumExtractionTable</DefName>
+    <label>alpha serum extraction table</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>This worktable allows you to refine animal genes and extract a concentrated essence called alpha serum, which can be used to raise more evolved versions of your animals in the animal enrichment center.</Description>
+    <graphicData>
+      <texPath>Things/Building/AlphaSerumTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <damageData>
+        <rect>(0.3,0,2.7,1)</rect>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+ 
+    <costList>
+      <Steel>100</Steel>
+      <Component>2</Component>
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-8</Beauty>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <researchPrerequisites><li>AnimalEnrichment</li></researchPrerequisites>
+	<designationCategory>GeneticsTab</designationCategory>
+  </ThingDef>
+  
+  
+  
+   <ThingDef ParentName="BuildingBase">
+    <DefName>AnimalEnrichmentCenter</DefName>
+    <label>animal enrichment center</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>This machine can fill an incubator with specific alpha serum and an organic base compound to create advanced versions of your base creatures.</Description>
+    <graphicData>
+      <texPath>Things/Building/AnimalEnrichmentCenter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,4)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>100</Steel>
+      <Component>1</Component>
+	 
+
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(2,4)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites><li>AnimalEnrichment</li></researchPrerequisites>
+		<designationCategory>GeneticsTab</designationCategory>
+
+  </ThingDef>
+  
 </ThingDefs>

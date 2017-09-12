@@ -135,7 +135,7 @@
 <ThingDef ParentName="ResourceBase">
     <defName>OrganicPulp</defName>
     <label>organic pulp</label>
-    <description>This wood pulp can be used as an organic growth compound to accelerate some of the genetic processes. Needed to upgrade the Gene Pod.</description>
+    <description>This organic pulp can be used as an organic growth compound to accelerate some of the genetic processes. Needed to upgrade the Gene Pod.</description>
     <graphicData>
       <texPath>Things/Item/OrganicPulp</texPath>
       <graphicClass>Graphic_Single</graphicClass>

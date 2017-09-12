@@ -121,6 +121,31 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
+		<defName>AlphaBoarTusks</defName>
+		<label>alpha boar tusks</label>
+		<description>These boar tusks are hard and could probably be carved into a sculpture by someone artistically inclined in a stonecutter's table.</description>
+		<graphicData>
+			<texPath>Things/Item/AlphaBoarTusks</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>50</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Mass>0.2</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
 		<defName>SpidersnakeSkin</defName>
 		<label>spidersnake shed skin</label>
 		<description>This shed skin can be ground and processed at a drug lab to extract minute amounts of neutroamine.</description>
@@ -133,6 +158,27 @@
 		  <MaxHitPoints>30</MaxHitPoints>
 		  <MarketValue>1</MarketValue>
 		  <Mass>0.01</Mass>
+		  <Flammability>1.0</Flammability>
+				<DeteriorationRate>1.0</DeteriorationRate>
+			</statBases>
+		<thingCategories>
+		  <li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>HugeBearPelt</defName>
+		<label>huge bear pelt</label>
+		<description>This enormous bear pelt is probably valuable as a trade good. Or it can also be repurposed as a huge rug.</description>
+		<graphicData>
+		  <texPath>Things/Item/HugeBearPelt</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <MarketValue>150</MarketValue>
+		  <Mass>8</Mass>
 		  <Flammability>1.0</Flammability>
 				<DeteriorationRate>1.0</DeteriorationRate>
 			</statBases>

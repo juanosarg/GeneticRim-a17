@@ -87,7 +87,7 @@
     <description>Research ways to improve existing animals, and accelerate their growth.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
-      <li>GeneticEngineering</li>
+      <li>Electricity</li>
     </prerequisites>
     
 		<researchViewX>2</researchViewX>
