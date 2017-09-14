@@ -14,7 +14,7 @@
 			<MaxHitPoints>10</MaxHitPoints>
 		</statBases>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 	</ThingDef>
 
@@ -36,7 +36,7 @@
 
 		</statBases>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeTags>
@@ -62,7 +62,7 @@
 
 		</statBases>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Exotic</li>
@@ -87,7 +87,7 @@
 
 		</statBases>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<drawGUIOverlay>false</drawGUIOverlay>
 		<tradeTags>
@@ -100,20 +100,20 @@
 		<label>very small teeth</label>
 		<description>These minuscule teeth are very durable. Some tribes in the Rimworlds tend to use animal teeth as currency, so they might be slightly valuable.</description>
 		<graphicData>
-			<texPath>Things/Item/BearwolfFangs</texPath>
+			<texPath>Things/Item/VerySmallTeeth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<stackLimit>50</stackLimit>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
-			<MarketValue>25</MarketValue>
+			<MarketValue>36</MarketValue>
 			<MaxHitPoints>10</MaxHitPoints>
 			<Mass>0.01</Mass>
 
 		</statBases>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Exotic</li>
@@ -138,7 +138,31 @@
 
 		</statBases>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>HugeRhinoHorn</defName>
+		<label>huge rhino horn</label>
+		<description>This immense rhino horn has no intrinsic value or usefulness, but it is often used in non-effectual alternative medicine treatments. Oh well, this is the Rim, it's better than selling slaves (or not, those who could judge didn't survive winter).</description>
+		<graphicData>
+			<texPath>Things/Item/HugeRhinoHorn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>10</MaxHitPoints>
+			<Mass>0.5</Mass>
+
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
 		</thingCategories>
 		<tradeTags>
 			<li>Exotic</li>
@@ -156,13 +180,13 @@
 		<stackLimit>75</stackLimit>
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
-		  <MarketValue>1</MarketValue>
+		  <MarketValue>36</MarketValue>
 		  <Mass>0.01</Mass>
 		  <Flammability>1.0</Flammability>
 				<DeteriorationRate>1.0</DeteriorationRate>
 			</statBases>
 		<thingCategories>
-		  <li>AnimalProductRaw</li>
+		  <li>ResourcesRaw</li>
 		</thingCategories>
 	</ThingDef>
 	
@@ -183,7 +207,80 @@
 				<DeteriorationRate>1.0</DeteriorationRate>
 			</statBases>
 		<thingCategories>
-		  <li>AnimalProductRaw</li>
+		  <li>ResourcesRaw</li>
 		</thingCategories>
 	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>WolfPelt</defName>
+		<label>wolf pelt</label>
+		<description>This wolf pelt can be used as a trade good. It can also be crafted into a decorative wolf rug.</description>
+		<graphicData>
+		  <texPath>Things/Item/WolfPelt</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <MarketValue>95</MarketValue>
+		  <Mass>4</Mass>
+		  <Flammability>1.0</Flammability>
+				<DeteriorationRate>1.0</DeteriorationRate>
+			</statBases>
+		<thingCategories>
+		  <li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>MuffaloPelt</defName>
+		<label>muffalo pelt</label>
+		<description>Cool! You can now make your own Game of Thrones / Rimworld cosplay! Or it can also be repurposed as a comfy rug.</description>
+		<graphicData>
+		  <texPath>Things/Item/MuffaloPelt</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <MarketValue>110</MarketValue>
+		  <Mass>6</Mass>
+		  <Flammability>1.0</Flammability>
+		  <DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+		  <li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+    <defName>EmuFatOintment</defName>
+    <label>emu fat ointment</label>
+    <description>This clump of emu fat can be used as a medicinal ointment.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Item/EmuFat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>15</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>0.60</MedicalPotency>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+    </comps>
+  </ThingDef>
 </Defs>

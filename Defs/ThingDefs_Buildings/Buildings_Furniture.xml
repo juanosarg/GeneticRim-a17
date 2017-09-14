@@ -39,6 +39,76 @@
     </CostList>
   </ThingDef>
   
+      <ThingDef ParentName="FurnitureBase">
+    <defName>WolfRug</defName>
+    <label>wolf rug</label>
+    <graphicData>
+      <texPath>Things/Building/WolfRug</texPath>
+      <graphicClass>Graphic_Single</graphicClass>    
+		<drawSize>(2,2)</drawSize>	  
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+	<pathCost>0</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>495</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+	 
+			<Beauty>35</Beauty>
+			
+			<Cleanliness>0.7</Cleanliness>
+    </statBases>
+
+			<minifiedDef>MinifiedFurniture</minifiedDef>
+		<rotatable>true</rotatable>
+<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		    <CostList>
+      <WolfPelt>1</WolfPelt>	
+    </CostList>
+  </ThingDef>
+  
+  <ThingDef ParentName="FurnitureBase">
+    <defName>MuffaloRug</defName>
+    <label>muffalo pelt rug</label>
+    <graphicData>
+      <texPath>Things/Building/MuffaloRug</texPath>
+      <graphicClass>Graphic_Single</graphicClass>    
+		<drawSize>(2,2)</drawSize>	  
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+	<pathCost>0</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>495</WorkToBuild>
+      <Mass>8</Mass>
+      <Flammability>1.0</Flammability>
+	 
+			<Beauty>40</Beauty>
+			
+			<Cleanliness>0.6</Cleanliness>
+    </statBases>
+
+			<minifiedDef>MinifiedFurniture</minifiedDef>
+		<rotatable>true</rotatable>
+<building>    
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		    <CostList>
+      <MuffaloPelt>1</MuffaloPelt>	
+    </CostList>
+  </ThingDef>
+  
   <ThingDef ParentName="BuildingBase">
     <defName>BoarTuskStatuette</defName>
     <label>small boar tusk statuette</label>

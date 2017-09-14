@@ -2,7 +2,113 @@
 <Defs>
 
  
+  <!-- AlphaChicken Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>AlphaChickenEggUnfertilized</defName>
+    <label>alpha chicken egg (unfert.)</label>
+    <description>Unfertilized alpha chicken egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness.</description>
+   
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.25</nutrition>
+    </ingestible>
+  </ThingDef>
 
+  <ThingDef ParentName="EggFertBase">
+    <defName>AlphaChickenEggFertilized</defName>
+    <label>alpha chicken egg (fert.)</label>
+    <description>Fertilized alpha chicken egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness. If all goes well, it should hatch into an alpha chicken.</description>
+
+    <statBases>
+      <MarketValue>9.0</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.25</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>3.5</hatcherDaysToHatch>
+        <hatcherPawn>AlphaChicken</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+    <!-- AlphaEmu Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>AlphaEmuEggUnfertilized</defName>
+    <label>alpha emu egg (unfert.)</label>
+    <description>Unfertilized alpha emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
+   
+    <statBases>
+      <MarketValue>15</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.4</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>AlphaEmuEggFertilized</defName>
+    <label>alpha emu egg (fert.)</label>
+    <description>Fertilized alpha emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into an alpha emu.</description>
+
+    <statBases>
+      <MarketValue>15</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.4</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>6</hatcherDaysToHatch>
+        <hatcherPawn>AlphaEmu</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+      <!-- AlphaOstrich Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>AlphaOstrichEggUnfertilized</defName>
+    <label>alpha ostrich egg (unfert.)</label>
+    <description>Unfertilized alpha ostrich egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
+    <graphicData>
+	  <texPath>Things/Item/EggHuge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.7</drawSize>
+	</graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.5</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>AlphaOstrichEggFertilized</defName>
+    <label>alpha ostrich egg (fert.)</label>
+    <description>Fertilized alpha ostrich egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into an alpha ostrich.</description>
+    <graphicData>
+	  <texPath>Things/Item/EggHuge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.7</drawSize>
+	</graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.5</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>8</hatcherDaysToHatch>
+        <hatcherPawn>AlphaOstrich</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
   <!-- Bear / Chicken Egg -->
   <ThingDef ParentName="EggUnfertBase">
     <defName>BearChickenEggUnfertilized</defName>
@@ -277,7 +383,7 @@
     </ingestible>
     <comps>
       <li Class="CompProperties_Hatcher">
-        <hatcherDaysToHatch>75</hatcherDaysToHatch>
+        <hatcherDaysToHatch>35</hatcherDaysToHatch>
         <hatcherPawn>Thrumbochicken</hatcherPawn>
       </li>
     </comps>
