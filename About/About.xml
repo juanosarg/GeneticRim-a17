@@ -19,7 +19,7 @@ The Boombeetle is a ranged creature, and the code for it is beta, so expect erra
 &lt;size=24&gt;Notes&lt;/size&gt;
 How do I progress? Here is a mini-guide:
 - First, research the genetic engineering tech.
-- Build a Pulper to get organic pulp from wood, and a Genetic Extraction Table to get DNA from animals and to build empty incubators.
+- Build a Pulper or a Recycler to get organic pulp from wood or corpses (the Recycler needs a Pulper first, though), and a Genetic Extraction Table to get DNA from animals and to build empty incubators.
 - Kill the animals to extract their genes.
 - Build the Gene Pod to mix the genes of different animals, and fill an empty incubator with the mixture.
 - The incubator will hatch in a day. Keep it warm! The creature will be born tamed.

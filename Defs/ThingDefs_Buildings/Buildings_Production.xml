@@ -235,6 +235,63 @@
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
+    <DefName>PulpRecycler</DefName>
+    <label>recycler</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>Turns corpses into a pulp, useful as a base organic compound.</Description>
+    <graphicData>
+      <texPath>Things/Building/PulpRecycler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>75</Steel>
+      <Component>1</Component>
+	  <OrganicPulp>2</OrganicPulp>
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(2,2)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>40</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites><li>GeneticEngineering</li></researchPrerequisites>
+		<designationCategory>GeneticsTab</designationCategory>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
     <DefName>TissueGrowingVat</DefName>
     <label>tissue growing vat</label>
     <ThingClass>Building_WorkTable</ThingClass>

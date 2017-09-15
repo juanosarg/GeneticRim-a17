@@ -72,6 +72,23 @@
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
+		<defName>DoBillsRecycler</defName>
+		<label>works at recycler</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>PulpRecycler</li>
+		</fixedBillGiverDefs>
+		<verb>pulping corpse</verb>
+		<gerund>pulping corpse at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
 		<defName>DoBillsVat</defName>
 		<label>works at tissue growing vat</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
