@@ -107,7 +107,7 @@
 		<stackLimit>50</stackLimit>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
-			<MarketValue>36</MarketValue>
+			<MarketValue>41</MarketValue>
 			<MaxHitPoints>10</MaxHitPoints>
 			<Mass>0.01</Mass>
 
@@ -180,7 +180,7 @@
 		<stackLimit>75</stackLimit>
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
-		  <MarketValue>36</MarketValue>
+		  <MarketValue>41</MarketValue>
 		  <Mass>0.01</Mass>
 		  <Flammability>1.0</Flammability>
 				<DeteriorationRate>1.0</DeteriorationRate>
@@ -266,7 +266,7 @@
     <soundDrop>Standard_Drop</soundDrop>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
-      <MarketValue>15</MarketValue>
+      <MarketValue>41</MarketValue>
       <Mass>0.35</Mass>
       <Flammability>1.0</Flammability>
       <MedicalPotency>0.60</MedicalPotency>

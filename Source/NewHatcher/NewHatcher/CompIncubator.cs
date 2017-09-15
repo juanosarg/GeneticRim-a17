@@ -80,7 +80,7 @@ namespace NewHatcher
             {
                 if (rand.NextDouble() < 0.9)
                 {
-                    request = new PawnGenerationRequest(this.Props.hatcherPawn, null, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, null, null, null, null, null, null);
+                    request = new PawnGenerationRequest(this.Props.hatcherPawn, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, null, null, null, null, null, null);
                 }
                 else
                 {

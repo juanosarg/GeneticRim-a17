@@ -366,7 +366,7 @@
         <labelPlural>boomalope calves</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Boomalope/Alphaboomalope</texPath>
-          <drawSize>1.0</drawSize>
+          <drawSize>1.80</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -380,7 +380,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Boomalope/Alphaboomalope</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2.25</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -394,7 +394,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Boomalope/Alphaboomalope</texPath>
-          <drawSize>2.0</drawSize>
+          <drawSize>2.6</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -508,7 +508,7 @@
         <label>chick</label>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Chicken/Alphachicken</texPath>
-          <drawSize>0.45</drawSize>
+          <drawSize>0.75</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
@@ -519,12 +519,9 @@
         <labelMale>cockerel</labelMale>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Chicken/Alphachicken</texPath>
-          <drawSize>0.75</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Alpha/Chicken/Alphachicken</texPath>
-          <drawSize>0.73</drawSize>
-        </femaleGraphicData>
+       
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
           <drawSize>0.7</drawSize>
@@ -533,16 +530,13 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Chicken/Alphachicken</texPath>
-          <drawSize>0.87</drawSize>
+          <drawSize>1.5</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
           </shadowData>
         </bodyGraphicData>
-        <femaleGraphicData>
-          <texPath>Things/Pawn/Animal/Alpha/Chicken/Alphachicken</texPath>
-          <drawSize>0.85</drawSize>
-        </femaleGraphicData>
+       
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
           <drawSize>0.85</drawSize>
@@ -654,7 +648,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Emu/Alphaemu</texPath>
-          <drawSize>1.0</drawSize>
+          <drawSize>2.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
@@ -664,7 +658,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Emu/Alphaemu</texPath>
-          <drawSize>1.3</drawSize>
+          <drawSize>2.3</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -678,7 +672,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Emu/Alphaemu</texPath>
-          <drawSize>1.6</drawSize>
+          <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -779,7 +773,7 @@
         <labelPlural>alpha muffalo calves</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Muffalo/Alphamuffalo</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -793,7 +787,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Muffalo/Alphamuffalo</texPath>
-          <drawSize>2.25</drawSize>
+          <drawSize>2.75</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -807,7 +801,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Muffalo/Alphamuffalo</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -929,7 +923,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Ostrich/Alphaostrich</texPath>
-          <drawSize>1.1</drawSize>
+          <drawSize>1.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
@@ -939,7 +933,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Ostrich/Alphaostrich</texPath>
-          <drawSize>1.4</drawSize>
+          <drawSize>2</drawSize>
           <shadowData>
             <volume>(0.3, 0.3, 0.3)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -953,7 +947,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Ostrich/Alphaostrich</texPath>
-          <drawSize>1.8</drawSize>
+          <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -1060,7 +1054,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Rhino/Alpharhino</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2</drawSize>
           <shadowData>
             <volume>(0.475, 0.2, 0.3)</volume>
             <offset>(0,0,-0.2)</offset>
@@ -1074,7 +1068,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Rhino/Alpharhino</texPath>
-          <drawSize>2.25</drawSize>
+          <drawSize>3.2</drawSize>
           <shadowData>
             <volume>(0.72, 0.3, 0.45)</volume>
             <offset>(0,0,-0.25)</offset>
@@ -1088,7 +1082,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Rhino/Alpharhino</texPath>
-          <drawSize>3</drawSize>
+          <drawSize>4.75</drawSize>
           <shadowData>
             <volume>(0.95, 0.4, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>
@@ -1236,7 +1230,7 @@
         <labelPlural>alpha timber wolf puppies</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Wolf/Alphawolf</texPath>
-          <drawSize>1.05</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
@@ -1246,7 +1240,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Wolf/Alphawolf</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2</drawSize>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
             <offset>(0,0,-0.15)</offset>
@@ -1260,7 +1254,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Alpha/Wolf/Alphawolf</texPath>
-          <drawSize>1.95</drawSize>
+          <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.15)</offset>

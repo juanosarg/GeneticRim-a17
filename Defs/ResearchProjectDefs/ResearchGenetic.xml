@@ -84,14 +84,29 @@
     <label>animal enrichment</label>
     <tab>GeneticReseach</tab>
     <techLevel>Industrial</techLevel>
-    <description>Research ways to improve existing animals, and accelerate their growth.</description>
+    <description>Research ways to improve existing animals and create better adapted versions of them.</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>Electricity</li>
     </prerequisites>
     
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>AgeDrugs</defName>
+    <label>age drugs</label>
+    <tab>GeneticReseach</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Research ways to accelerate the growth of your animals.</description>
+    <baseCost>500</baseCost>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

@@ -89,6 +89,40 @@
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
+		<defName>DoBillsSerumTable</defName>
+		<label>works at alpha serum extraction table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AlphaSerumExtractionTable</li>
+		</fixedBillGiverDefs>
+		<verb>extracting serum</verb>
+		<gerund>extracting serum at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DoBillsAnimalEnrichment</defName>
+		<label>works at animal enrichment center</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AnimalEnrichmentCenter</li>
+		</fixedBillGiverDefs>
+		<verb>mixing alpha serum</verb>
+		<gerund>mixing alpha serum at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
 		<defName>AnimalResource</defName>
 		<label>gather animal resource</label>
 		<giverClass>NewAnimalSubproducts.WorkGiver_AnimalResource</giverClass>
