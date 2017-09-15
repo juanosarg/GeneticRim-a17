@@ -6,18 +6,21 @@
       <defName>GeneticMaterial</defName>
       <label>genetic materials</label>
       <parent>Manufactured</parent>
+	  <iconPath>Things/Item/geneticmaterials</iconPath>
       
     </ThingCategoryDef>
 	<ThingCategoryDef>
       <defName>Incubators</defName>
       <label>incubators</label>
       <parent>GeneticMaterial</parent>
+	  <iconPath>Things/Item/IncubatorCanister</iconPath>
       
     </ThingCategoryDef>
 	<ThingCategoryDef>
       <defName>AlphaSerums</defName>
       <label>alpha serums</label>
       <parent>GeneticMaterial</parent>
+	  <iconPath>Things/Item/AlphaSerum</iconPath>
       
     </ThingCategoryDef>
 
