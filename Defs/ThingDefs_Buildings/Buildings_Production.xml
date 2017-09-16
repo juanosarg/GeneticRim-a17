@@ -264,7 +264,7 @@
     <Passability>PassThroughOnly</Passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
    
     <inspectorTabs>
