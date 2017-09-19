@@ -567,7 +567,7 @@
       <lifeExpectancy>50</lifeExpectancy>
       <useLeatherFrom>Emu</useLeatherFrom>
 	  <gestationPeriodDays>20</gestationPeriodDays>
-      <useMeatFrom>Emu</useMeatFrom>
+      <useMeatFrom>Cassowary</useMeatFrom>
       <manhunterOnTameFailChance>0.022</manhunterOnTameFailChance>
 	  <lifeStageAges>
         <li>
@@ -839,7 +839,7 @@
       <wildness>0.95</wildness>
       <lifeExpectancy>65</lifeExpectancy>
       <useLeatherFrom>Ostrich</useLeatherFrom>
-      <useMeatFrom>Ostrich</useMeatFrom>
+      <useMeatFrom>Cassowary</useMeatFrom>
       <manhunterOnTameFailChance>0.022</manhunterOnTameFailChance>
 	  <body>Bird</body>
       <gestationPeriodDays>20</gestationPeriodDays>

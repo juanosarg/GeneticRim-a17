@@ -109,8 +109,16 @@ namespace NewAnimalSubproducts
             {
                 return Translator.Translate("SilkGrowth") + ": " + base.Fullness.ToStringPercent();
             }
-            
-           
+            else if (ResourceDef.ToString() == "GR_EldritchInsectJelly")
+            {
+                return Translator.Translate("JellyGrowth2") + ": " + base.Fullness.ToStringPercent();
+            }
+            else if (ResourceDef.ToString() == "GR_DarkYoungWoodLog")
+            {
+                return Translator.Translate("TentacleGrowth") + ": " + base.Fullness.ToStringPercent();
+            }
+
+
             else  return Translator.Translate("ResourceGrowth") + ": " + base.Fullness.ToStringPercent();
         }
 
