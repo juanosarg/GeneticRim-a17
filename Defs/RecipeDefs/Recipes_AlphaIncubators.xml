@@ -504,6 +504,285 @@
 				<minLevel>5</minLevel>
 			</li>
 		</skillRequirements>
-	</RecipeDef>		
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>GR_CreateAlphaHareIncubator</defName>
+		<label>alpha hare incubator</label>
+		<description>Fill an incubator with alpha genes from a hare</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>AnimalEnrichmentCenter</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_HareSerum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OrganicPulp</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>GR_HareSerum</li>
+				<li>OrganicPulp</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_AlphaHareIncubator>1</GR_AlphaHareIncubator>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>			
 	
+	<RecipeDef>
+		<defName>GR_CreateAlphaIguanaIncubator</defName>
+		<label>alpha iguana incubator</label>
+		<description>Fill an incubator with alpha genes from an iguana</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>AnimalEnrichmentCenter</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_IguanaSerum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OrganicPulp</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>GR_IguanaSerum</li>
+				<li>OrganicPulp</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_AlphaIguanaIncubator>1</GR_AlphaIguanaIncubator>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>			
+	
+	<RecipeDef>
+		<defName>GR_CreateAlphaPigIncubator</defName>
+		<label>alpha pig incubator</label>
+		<description>Fill an incubator with alpha genes from a pig</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>AnimalEnrichmentCenter</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_PigSerum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OrganicPulp</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>GR_PigSerum</li>
+				<li>OrganicPulp</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_AlphaPigIncubator>1</GR_AlphaPigIncubator>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef>
+		<defName>GR_CreateAlphaRatIncubator</defName>
+		<label>alpha rat incubator</label>
+		<description>Fill an incubator with alpha genes from a rat</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>AnimalEnrichmentCenter</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_RatSerum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OrganicPulp</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>GR_RatSerum</li>
+				<li>OrganicPulp</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_AlphaRatIncubator>1</GR_AlphaRatIncubator>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+
+	<RecipeDef>
+		<defName>GR_CreateAlphaTortoiseIncubator</defName>
+		<label>alpha rat incubator</label>
+		<description>Fill an incubator with alpha genes from a tortoise</description>
+		<jobString>Filling Incubator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>AnimalEnrichmentCenter</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EmptyIncubator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TortoiseSerum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OrganicPulp</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>EmptyIncubator</li>
+				<li>GR_TortoiseSerum</li>
+				<li>OrganicPulp</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_AlphaTortoiseIncubator>1</GR_AlphaTortoiseIncubator>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>		
 </RecipeDefs>

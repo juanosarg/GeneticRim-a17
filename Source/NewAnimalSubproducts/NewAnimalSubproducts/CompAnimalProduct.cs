@@ -117,7 +117,10 @@ namespace NewAnimalSubproducts
             {
                 return Translator.Translate("TentacleGrowth") + ": " + base.Fullness.ToStringPercent();
             }
-
+            else if (ResourceDef.ToString() == "GR_ChocolateEgg")
+            {
+                return Translator.Translate("ChocolateEgg") + ": " + base.Fullness.ToStringPercent();
+            }
 
             else  return Translator.Translate("ResourceGrowth") + ": " + base.Fullness.ToStringPercent();
         }

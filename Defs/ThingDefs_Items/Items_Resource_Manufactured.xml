@@ -242,7 +242,52 @@
 	<graphicData>
       <color>(106,106,106)</color>
     </graphicData>   
-  </ThingDef>      
+  </ThingDef>     
+
+  <ThingDef ParentName="SerumsBase">
+    <defName>GR_HareSerum</defName>
+    <label>hare alpha serum</label>
+	<description>A vial of alpha genes extracted from a hare's corpse.</description>    
+	<graphicData>
+      <color>(115,115,115)</color>
+    </graphicData>   
+  </ThingDef> 
+  
+  <ThingDef ParentName="SerumsBase">
+    <defName>GR_IguanaSerum</defName>
+    <label>iguana alpha serum</label>
+	<description>A vial of alpha genes extracted from an iguana's corpse.</description>    
+	<graphicData>
+      <color>(109,124,63)</color>
+    </graphicData>   
+  </ThingDef>   
+  
+  <ThingDef ParentName="SerumsBase">
+    <defName>GR_PigSerum</defName>
+    <label>pig alpha serum</label>
+	<description>A vial of alpha genes extracted from a pig's corpse.</description>    
+	<graphicData>
+      <color>(250,202,202)</color>
+    </graphicData>   
+  </ThingDef>   
+  
+  <ThingDef ParentName="SerumsBase">
+    <defName>GR_RatSerum</defName>
+    <label>rat alpha serum</label>
+	<description>A vial of alpha genes extracted from a rat's corpse.</description>    
+	<graphicData>
+      <color>(114,95,80)</color>
+    </graphicData>   
+  </ThingDef>   
+  
+  <ThingDef ParentName="SerumsBase">
+    <defName>GR_TortoiseSerum</defName>
+    <label>tortoise alpha serum</label>
+	<description>A vial of alpha genes extracted from a tortoise's corpse.</description>    
+	<graphicData>
+      <color>(109,90,54)</color>
+    </graphicData>   
+  </ThingDef>     
   
    <!--=============== Organic Pulp ====================-->
    

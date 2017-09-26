@@ -40,7 +40,10 @@
     <defName>AlphaEmuEggUnfertilized</defName>
     <label>alpha emu egg (unfert.)</label>
     <description>Unfertilized alpha emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
-   
+    <graphicData>
+	  <texPath>Things/Item/EggLarge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
     <statBases>
       <MarketValue>15</MarketValue>
     </statBases>
@@ -53,7 +56,10 @@
     <defName>AlphaEmuEggFertilized</defName>
     <label>alpha emu egg (fert.)</label>
     <description>Fertilized alpha emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into an alpha emu.</description>
-
+    <graphicData>
+	  <texPath>Things/Item/EggLarge</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
     <statBases>
       <MarketValue>15</MarketValue>
     </statBases>
@@ -105,6 +111,89 @@
       <li Class="CompProperties_Hatcher">
         <hatcherDaysToHatch>8</hatcherDaysToHatch>
         <hatcherPawn>AlphaOstrich</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+      <!-- AlphaIguana Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>GR_AlphaIguanaEggUnfertilized</defName>
+    <label>alpha iguana egg (unfert.)</label>
+    <description>Unfertilized alpha iguana egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	 
+	</graphicData>
+    <statBases>
+      <MarketValue>36</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.2</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>GR_AlphaIguanaEggFertilized</defName>
+    <label>alpha iguana egg (fert.)</label>
+    <description>Fertilized alpha iguana egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an alpha iguana.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+    <statBases>
+      <MarketValue>36</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.2</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>3</hatcherDaysToHatch>
+        <hatcherPawn>GR_AlphaIguana</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+        <!-- AlphaTortoise Egg -->
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>GR_AlphaTortoiseEggUnfertilized</defName>
+    <label>alpha tortoise egg (unfert.)</label>
+    <description>Unfertilized alpha tortoise egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <drawSize>1.3</drawSize>
+	  <graphicClass>Graphic_StackCount</graphicClass> 
+	</graphicData>
+    <statBases>
+      <MarketValue>36</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.4</nutrition>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>GR_AlphaTortoiseEggFertilized</defName>
+    <label>alpha tortoise egg (fert.)</label>
+    <description>Fertilized alpha tortoise egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an alpha tortoise.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <drawSize>1.3</drawSize>
+	  <graphicClass>Graphic_StackCount</graphicClass> 
+	</graphicData>
+    <statBases>
+      <MarketValue>36</MarketValue>
+    </statBases>
+	<ingestible>
+       <nutrition>.4</nutrition>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>3</hatcherDaysToHatch>
+        <hatcherPawn>GR_AlphaTortoise</hatcherPawn>
       </li>
     </comps>
   </ThingDef>

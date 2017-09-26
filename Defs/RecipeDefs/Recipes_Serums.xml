@@ -365,4 +365,204 @@
 		</skillRequirements>
 	</RecipeDef> 
 	
+	<RecipeDef>
+		<defName>GR_ExtractSerumHare</defName>
+		<label>extract alpha serum from a hare</label>
+		<description>Extract alpha serum from a hare corpse.</description>
+		<jobString>Extracting alpha serum</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>AlphaSerumExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Hare_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Hare_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_HareSerum>1</GR_HareSerum>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef> 
+	
+	<RecipeDef>
+		<defName>GR_ExtractSerumIguana</defName>
+		<label>extract alpha serum from an iguana</label>
+		<description>Extract alpha serum from an iguana corpse.</description>
+		<jobString>Extracting alpha serum</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>AlphaSerumExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Iguana_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Iguana_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_IguanaSerum>1</GR_IguanaSerum>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>GR_ExtractSerumPig</defName>
+		<label>extract alpha serum from a pig</label>
+		<description>Extract alpha serum from a pig corpse.</description>
+		<jobString>Extracting alpha serum</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>AlphaSerumExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Pig_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Pig_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_PigSerum>1</GR_PigSerum>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
+	<RecipeDef>
+		<defName>GR_ExtractSerumRat</defName>
+		<label>extract alpha serum from a rat</label>
+		<description>Extract alpha serum from a rat corpse.</description>
+		<jobString>Extracting alpha serum</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>AlphaSerumExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Rat_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Rat_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_RatSerum>1</GR_RatSerum>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>GR_ExtractSerumTortoise</defName>
+		<label>extract alpha serum from a tortoise</label>
+		<description>Extract alpha serum from a tortoise corpse.</description>
+		<jobString>Extracting alpha serum</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+				<li>AlphaSerumExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+				
+					<thingDefs>
+						<li>Tortoise_Corpse</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		
+			<thingDefs>
+				<li>Tortoise_Corpse</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_TortoiseSerum>1</GR_TortoiseSerum>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Intellectual</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+	</RecipeDef>	
+	
 </RecipeDefs>

@@ -39,6 +39,17 @@
     </additionalHediffs>
   </DamageDef>
   
+  <DamageDef ParentName="Bite">
+    <defName>PlagueBite</defName>
+    <label>plagued bite</label>
+    <additionalHediffs>
+      <li>
+        <hediff>Plague</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
   
 
  

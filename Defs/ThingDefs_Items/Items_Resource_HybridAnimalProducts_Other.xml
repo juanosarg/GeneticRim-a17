@@ -283,4 +283,158 @@
 			</li>
     </comps>
   </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>GR_ChocolateEgg</defName>
+    <label>chocolate egg</label>
+    <description>An egg made of good quality chocolate. Delicious!</description>
+    <graphicData>
+      <texPath>Things/Item/EggHuge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(116,62,4)</color>
+
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <nutrition>0.15</nutrition>
+      <joy>0.15</joy>
+      <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GR_BaconStrips</defName>
+    <label>bacon jerky</label>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <description>Preserved, salted strips of dried bacon. Can be stored for months without refrigeration.</description>
+    <graphicData>
+      <texPath>Things/Item/BaconStrips</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.018</Mass>
+	  <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.1</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffset>6</optimalityOffset>
+		</ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>80</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GR_JamonSerrano</defName>
+    <label>jamon serrano</label>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <description>This dry-cured ham is considered a delicacy. It is generally served in thin slices, occasionally diced. It can be stored for a long time without refrigeration.</description>
+    <graphicData>
+      <texPath>Things/Item/JamonSerrano</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>55</MarketValue>
+      <Mass>2</Mass>
+	  <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <preferability>MealSimple</preferability>
+      <nutrition>0.4</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffset>6</optimalityOffset>
+		</ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>GR_TortoiseShell</defName>
+    <label>hardened tortoise shell</label>
+    <description>A very rare, hard material produced from the shells of slaughtered giant tortoises. Not practical for mass use, unless you can get a TON of tortoises.</description>
+    <graphicData>
+      <texPath>Things/Item/TortoiseShell</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+		<useHitPoints>false</useHitPoints>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>25</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.75</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.05</commonality>
+      <color>(109,90,54)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statOffsets>
+        <Beauty>7</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <WorkToMake>1.4</WorkToMake>
+				<WorkToBuild>5.0</WorkToBuild>
+				<Beauty>3</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+  
+  
+  
 </Defs>
