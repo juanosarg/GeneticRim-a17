@@ -310,7 +310,7 @@
       <baseHealthScale>10.0</baseHealthScale>
       <useLeatherFrom>Thrumbo</useLeatherFrom>
       <useMeatFrom>Thrumbo</useMeatFrom>
-     
+      <packAnimal>true</packAnimal>
       <trainableIntelligence>Advanced</trainableIntelligence>
       <gestationPeriodDays>80</gestationPeriodDays>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
