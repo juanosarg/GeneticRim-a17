@@ -71,7 +71,7 @@ namespace NewHatcher
         public void Hatch()
         {
 
-          
+        if (this.parent.Map.IsPlayerHome) { 
 
         FilthMaker.MakeFilth(this.parent.Position, this.parent.Map, ThingDefOf.FilthAmnioticFluid, 1);
            
@@ -118,6 +118,7 @@ namespace NewHatcher
                 }
             }
             this.parent.Destroy(DestroyMode.Vanish);
+        }
         }
 
 
