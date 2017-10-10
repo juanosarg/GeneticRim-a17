@@ -732,7 +732,7 @@
 
 	<RecipeDef>
 		<defName>GR_CreateAlphaTortoiseIncubator</defName>
-		<label>alpha rat incubator</label>
+		<label>alpha tortoise incubator</label>
 		<description>Fill an incubator with alpha genes from a tortoise</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>

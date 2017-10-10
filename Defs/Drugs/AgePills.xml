@@ -15,7 +15,7 @@
     <statBases>
       <MarketValue>60</MarketValue>
       <Mass>0.01</Mass>
-	  <WorkToMake>600</WorkToMake>
+	  <WorkToMake>2500</WorkToMake>
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
@@ -35,8 +35,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <PsychoidLeaves>2</PsychoidLeaves>
-	  <HerbalMedicine>1</HerbalMedicine>
+      <PsychoidLeaves>6</PsychoidLeaves>
+	  <HerbalMedicine>3</HerbalMedicine>
 
     </costList>
     <comps>

@@ -40,7 +40,7 @@ namespace NewHatcher
         {
 
             int randomNumber = rand.Next(1, 11);
-            //Log.Warning(randomNumber.ToString());
+            //giLog.Warning(randomNumber.ToString());
 
 
             if (randomNumber == 10)
