@@ -292,6 +292,63 @@
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
+    <DefName>GR_GeneRecombinator</DefName>
+    <label>gene recombinator</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>Mixes genes from different species, and produces genes from other species at random. Or not. Also, be careful, you don't want to mix frogs with other things. Life finds a way.</Description>
+    <graphicData>
+      <texPath>Things/Building/GR_GeneRecombinator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>75</Steel>
+      <Component>3</Component>
+	  <OrganicPulp>5</OrganicPulp>
+    </costList>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(2,2)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites><li>GeneticEngineering</li></researchPrerequisites>
+		<designationCategory>GeneticsTab</designationCategory>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
     <DefName>TissueGrowingVat</DefName>
     <label>tissue growing vat</label>
     <ThingClass>Building_WorkTable</ThingClass>
