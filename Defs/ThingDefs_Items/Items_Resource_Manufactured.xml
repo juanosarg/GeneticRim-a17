@@ -130,6 +130,20 @@
     
   </ThingDef>
   
+  <ThingDef ParentName="GeneticsBase">
+    <defName>GR_RuinedGenetic</defName>
+    <label>ruined genetic material</label>
+    <description>This broken vial is useless.</description>
+    
+    <graphicData>
+            <texPath>Things/Item/GR_RuinedGenetic</texPath>
+
+    </graphicData>
+	<statBases>
+       <MarketValue>1</MarketValue>
+    </statBases>
+  </ThingDef>
+  
    <!--=============== Alpha Serums ====================-->
 
   <ThingDef Name="SerumsBase" ParentName="ResourceBase" Abstract="True">

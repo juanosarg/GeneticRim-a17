@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿
+using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
@@ -59,8 +60,8 @@ namespace NewHatcher
         {
             if (!this.TemperatureDamaged)
             {
-               float num = 1f / (this.Props.hatcherDaystoHatch * 60000f);
-               this.gestateProgress += num;
+                float num = 1f / (this.Props.hatcherDaystoHatch * 60000f);
+                this.gestateProgress += num;
                 if (this.gestateProgress > 1f)
                 {
                     this.Hatch();
@@ -71,54 +72,55 @@ namespace NewHatcher
         public void Hatch()
         {
 
-        if (this.parent.Map.IsPlayerHome) { 
-
-        FilthMaker.MakeFilth(this.parent.Position, this.parent.Map, ThingDefOf.FilthAmnioticFluid, 1);
-           
-
-            for (int i = 0; i < this.parent.stackCount; i++)
+            if (this.parent.Map.IsPlayerHome)
             {
-                if (rand.NextDouble() < 0.9)
+
+                FilthMaker.MakeFilth(this.parent.Position, this.parent.Map, ThingDefOf.FilthAmnioticFluid, 1);
+
+
+                for (int i = 0; i < this.parent.stackCount; i++)
                 {
-                    request = new PawnGenerationRequest(this.Props.hatcherPawn, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, null, null, null, null, null, null);
-                }
-                else
-                {
-                    request = new PawnGenerationRequest(PawnKindDef.Named("AberrantFleshbeast"), null, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, null, null, null, null, null, null);
-                }
-                Pawn pawn = PawnGenerator.GeneratePawn(request);
-                if (PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this.parent))
-                {
-                    if (pawn != null)
+                    if (rand.NextDouble() < 0.9)
                     {
-                        if (this.hatcheeParent != null)
+                        request = new PawnGenerationRequest(this.Props.hatcherPawn, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, null, null, null, null, null, null);
+                    }
+                    else
+                    {
+                        request = new PawnGenerationRequest(PawnKindDef.Named("AberrantFleshbeast"), null, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, null, null, null, null, null, null);
+                    }
+                    Pawn pawn = PawnGenerator.GeneratePawn(request);
+                    if (PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this.parent))
+                    {
+                        if (pawn != null)
                         {
-                            if (pawn.playerSettings != null && this.hatcheeParent.playerSettings != null && this.hatcheeParent.Faction == this.hatcheeFaction)
+                            if (this.hatcheeParent != null)
                             {
-                                pawn.playerSettings.AreaRestriction = this.hatcheeParent.playerSettings.AreaRestriction;
+                                if (pawn.playerSettings != null && this.hatcheeParent.playerSettings != null && this.hatcheeParent.Faction == this.hatcheeFaction)
+                                {
+                                    pawn.playerSettings.AreaRestriction = this.hatcheeParent.playerSettings.AreaRestriction;
+                                }
+                                if (pawn.RaceProps.IsFlesh)
+                                {
+                                    pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, this.hatcheeParent);
+                                }
                             }
-                            if (pawn.RaceProps.IsFlesh)
+                            if (this.otherParent != null && (this.hatcheeParent == null || this.hatcheeParent.gender != this.otherParent.gender) && pawn.RaceProps.IsFlesh)
                             {
-                                pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, this.hatcheeParent);
+                                pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, this.otherParent);
                             }
                         }
-                        if (this.otherParent != null && (this.hatcheeParent == null || this.hatcheeParent.gender != this.otherParent.gender) && pawn.RaceProps.IsFlesh)
+                        if (this.parent.Spawned)
                         {
-                            pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, this.otherParent);
+                            FilthMaker.MakeFilth(this.parent.Position, this.parent.Map, ThingDefOf.FilthAmnioticFluid, 1);
                         }
                     }
-                    if (this.parent.Spawned)
+                    else
                     {
-                        FilthMaker.MakeFilth(this.parent.Position, this.parent.Map, ThingDefOf.FilthAmnioticFluid, 1);
+                        Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.Discard);
                     }
                 }
-                else
-                {
-                    Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.Discard);
-                }
+                this.parent.Destroy(DestroyMode.Vanish);
             }
-            this.parent.Destroy(DestroyMode.Vanish);
-        }
         }
 
 
@@ -168,4 +170,5 @@ namespace NewHatcher
         }
     }
 }
+
 
