@@ -259,3 +259,12 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+Source/ExplosionTypes/.vs/ExplosionTypes/v15/.suo
+Source/NewHatcher/.vs/NewHatcher/v15/.suo
+Source/NewHatcher/NewHatcher/obj/Debug/NewHatcher.csproj.CoreCompileInputs.cache
+Textures/Things/Pawn/Animal/Bears/Bearmole/Bearmole_side.png
+Textures/Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel_side.png
+Textures/Things/Pawn/Animal/Chicken/Chickenrabbit/Chickenrabbit_side.png
+Textures/Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat_side.png
+Textures/Things/Pawn/Animal/Thrumbos/Thrumborat/Thrumborat_side.png
+Textures/Things/Pawn/Animal/Wolf/Wolfbeaver/Wolfbeaver_side.png
